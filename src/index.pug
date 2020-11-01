@@ -1,0 +1,24 @@
+extends pug/template.pug
+
+append title
+    |  Home
+append subheader
+    .subheader__main
+        .subheader__nav
+        div#carouselExampleControls.carousel.slide(data-ride="carousel")
+            div.carousel-inner
+                div.carousel-item.active
+                    img(src="img/header/bg_header.jpg" class="d-block w-100" alt="background")
+                    include pug/_block_for_main_subheader.pug
+                div.carousel-item
+                    img(src="img/header/bg_header.jpg" class="d-block w-100" alt="background")
+                    include pug/_block_for_main_subheader.pug
+                div.carousel-item
+                    img(src="img/header/bg_header.jpg" class="d-block w-100" alt="background")
+                    include pug/_block_for_main_subheader.pug
+            a.carousel-control-prev(href="#carouselExampleControls" role="button" data-slide="prev")
+                span.carousel-control-prev-icon(aria-hidden="true")
+                span.sr-only Previous
+            a.carousel-control-next(href="#carouselExampleControls" role="button" data-slide="next")
+                span.carousel-control-next-icon(aria-hidden="true")
+                span.sr-only Next

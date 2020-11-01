@@ -1,0 +1,66 @@
+.header
+    position: fixed
+    top: 0
+    left: 0
+    z-index: 1
+    height: 63px
+    width: 100%
+    padding: 16px 214px 18px 214px
+    background-color: rgba(255, 255, 255, 0.8)
+    display: flex
+    justify-content: space-between
+    &__logo
+        width: 173px
+        display: flex
+        align-items: flex-end
+        justify-content: space-between
+    &__icon
+        display: block
+        width: 41px
+        height: 29px
+    &__company-name 
+        color: rgba(117, 117, 117, .9)
+        font-size: 18px
+        font-weight: 600
+        letter-spacing: 1.8px
+        text-transform: uppercase
+        line-height: 1
+    &__border 
+        height: 10px
+        width: 2px
+        background-color: #aaaaaa
+        margin: 0px 4px 0px 4px
+    &__social
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-top: 12px
+        margin-left: 256px
+    &__link
+        display: block
+    &__mini-icon
+        display: block
+        cursor: pointer
+        height: 10px
+        width: auto
+
+.nav
+    margin-top: 13px
+    margin-left: 107px
+    &__list
+        display: flex
+    &__item
+        margin-right: 17px
+        &:last-child
+            margin-right: 0px
+    &__link
+        color: #aaaaaa
+        font-size: 12px
+        font-weight: 400
+        text-align: left
+        text-transform: uppercase
+        cursor: pointer
+        &:hover
+            text-decoration: none
+            color: inherit
+            font-weight: bold
