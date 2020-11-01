@@ -1,0 +1,14 @@
+mixin text(title, src, paragraph)
+    .text
+        h2.text__title #{title}
+        img.text__line(src=src, alt="line")
+        .text__paragraph #{paragraph}
+
+mixin rezult(src, w1, w2, num)
+    .aboutus__item
+        img.aboutus__icon(src=src, alt="pic")
+        .aboutus__descr.
+            #{w1} 
+            #[br]
+            #{w2} 
+        .aboutus__num #{num}

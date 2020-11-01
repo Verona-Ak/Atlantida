@@ -1,5 +1,5 @@
 extends pug/template.pug
-
+include pug/mixins.pug
 append title
     |  Home
 append subheader
@@ -22,3 +22,20 @@ append subheader
             a.carousel-control-next(href="#carouselExampleControls" role="button" data-slide="next")
                 span.carousel-control-next-icon(aria-hidden="true")
                 span.sr-only Next
+    section.aboutus
+        .aboutus__card
+            img.aboutus__img(src="img/about_us/bg_about.jpg", alt="pic")
+            .aboutus__text-block
+                +text(
+                    'ABOUT US', 
+                    'img/black_line.png', 
+                    'Donec aliquet, ipsum ut lobortis facilisis, nisi ligula aliquam odio, ut vehicula odio lorem in erat. Quisque quam ipsum, commodo non condimentum a, fermentum id sapien. Pellentesque sit amet sem neque. Maecenas est enim, sollicitudin sit amet nisi vel, mattis efficitur sapien. Nulla lobortis dui in aliquam placerat. Maecenas commodo odio nec neque imperdiet sagittis. Fusce mauris tellus, vulputate id finibus a, rutrum et justo. Vivamus at eros sed justo laoreet mattis vulputate vel magna. Sed quis pulvinar quam, et tempus purus. Fusce et nisi eget dui hendrerit iaculis. Cras volutpat augue tempor viverra tincidunt. Maecenas interdum scelerisque enim. Aenean interdum leo ac lectus gravida, id tincidunt sem finibus. Curabitur ac arcu blandit, tempus leo id, ultrices ante.'
+                )  
+                .aboutus__buttons
+                    button.aboutus__button.aboutus__button_black Contact Us
+                    button.aboutus__button.aboutus__button_white Portfolio
+            .aboutus__results
+                +rezult("img/about_us/about/awards.png", 'AWARDS', 'WINNER', 54)
+                +rezult("img/about_us/about/done.png", 'JOBS', 'DONE', 1054)
+                +rezult("img/about_us/about/clients.png", 'HAPPY', 'CLIENTS', 120)
+                +rezult("img/about_us/about/reviews.png", 'reviews', 'recieved', 54)
