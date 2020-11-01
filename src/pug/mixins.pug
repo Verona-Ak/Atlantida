@@ -1,8 +1,13 @@
 mixin text(title, src, paragraph)
     .text
-        h2.text__title #{title}
+        h2.text__title(
+            class={text__title_color: colorTitle === 'white'},
+        ) #{title}
         img.text__line(src=src, alt="line")
-        .text__paragraph #{paragraph}
+        .text__paragraph(
+            class={text__paragraph_color: colorParag === 'light'},
+            class={text__paragraph_center: center === true}
+        ) #{paragraph}
 
 mixin rezult(src, w1, w2, num)
     .aboutus__item
@@ -12,3 +17,12 @@ mixin rezult(src, w1, w2, num)
             #[br]
             #{w2} 
         .aboutus__num #{num}
+
+mixin servicesCards(img, alt, w1, w2, text)
+    .services__card
+        img.services__icon(src=src, alt=alt)
+        .services__title.
+            #{w1} 
+            #[br]
+            #{w2}
+        .services__descr

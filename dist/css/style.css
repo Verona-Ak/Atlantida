@@ -226,7 +226,7 @@ h6 {
 }
 
 .aboutus__buttons {
-  margin-top: 45px;
+  margin-top: 25px;
   display: flex;
   justify-content: center;
 }
@@ -298,6 +298,7 @@ h6 {
 }
 
 .text__title {
+  font-family: Stylish, sans-serif;
   color: #3e3d3d;
   font-size: 20px;
   font-weight: 400;
@@ -306,15 +307,35 @@ h6 {
   letter-spacing: 0.44px;
 }
 
+.text__title_color {
+  color: #ffffff;
+}
+
 .text__line {
   display: block;
-  margin-top: 27px;
   margin: 0 auto;
+  margin-top: 27px;
 }
 
 .text__paragraph {
+  font-family: Crimson Text, serif;
   margin: 0 auto;
   margin-top: 41px;
   width: 1026px;
   text-align: justify;
+}
+
+.text__paragraph_color {
+  color: #cfcfcf;
+}
+
+.text__paragraph_center {
+  text-align: center;
+  line-height: 25px;
+  letter-spacing: 1.4px;
+}
+
+.servises {
+  height: 742px;
+  background: url("../img/servises/bg_servises.jpg") center center/cover no-repeat;
 }
