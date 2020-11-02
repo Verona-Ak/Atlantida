@@ -132,12 +132,13 @@ h6 {
   height: 34px;
 }
 
-.subheader {
-  position: relative;
+.carousel-bg {
+  height: 698px;
+  background: url("../../img/header/bg_header.jpg") center center/cover no-repeat;
 }
 
 .subheader__main {
-  max-height: 698px;
+  position: relative;
 }
 
 .subheader__nav {
@@ -157,7 +158,7 @@ h6 {
 
 .subheader__paragraph {
   color: #ffffff;
-  font-family: Crimson Text, serif;
+  font-family: 'Crimson Text', serif;
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 1.4px;
@@ -226,7 +227,7 @@ h6 {
 }
 
 .aboutus__buttons {
-  margin-top: 25px;
+  margin-top: 45px;
   display: flex;
   justify-content: center;
 }
@@ -318,7 +319,7 @@ h6 {
 }
 
 .text__paragraph {
-  font-family: Crimson Text, serif;
+  font-family: 'Crimson Text', serif;
   margin: 0 auto;
   margin-top: 41px;
   width: 1026px;
@@ -335,7 +336,78 @@ h6 {
   letter-spacing: 1.4px;
 }
 
-.servises {
+.services {
   height: 742px;
   background: url("../img/servises/bg_servises.jpg") center center/cover no-repeat;
+}
+
+.services__container {
+  margin-top: 77px;
+  display: flex;
+  justify-content: center;
+}
+
+.services__card {
+  width: 270px;
+  height: 377px;
+  border: 1px #cfcfcf solid;
+  border-top: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 30px;
+  position: relative;
+}
+
+.services__card:last-child {
+  margin-right: 0;
+}
+
+.services__icon {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.services__icon::before,
+.services__icon::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  height: 1px;
+  width: 110px;
+  background-color: #cfcfcf;
+}
+
+.services__icon::before {
+  right: 37px;
+}
+
+.services__icon::after {
+  left: 37px;
+}
+
+.services__title {
+  margin-top: 58px;
+  color: #d8d8d8;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1.47px;
+}
+
+.services__descr {
+  margin-top: 29px;
+  width: 218px;
+  color: #d8d8d8;
+  font-family: 'Crimson Text', serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20.31px;
+  text-align: center;
+  letter-spacing: 1.4px;
 }
