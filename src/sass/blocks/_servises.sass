@@ -17,12 +17,6 @@
         &:last-child
             margin-right: 0
         position: relative
-    &__icon
-        display: block
-        position: absolute
-        top: 0
-        left: 50%
-        transform: translateX(-50%)
         &::before, &::after
             content: ''
             position: absolute
@@ -31,9 +25,16 @@
             width: 110px
             background-color: #cfcfcf
         &::before
-            right: 37px
+            right: 0
         &::after
-            left: 37px
+            left: 0
+    &__icon
+        display: block
+        position: absolute
+        top: -11px
+        left: 50%
+        transform: translateX(-50%)
+        
     &__title
         margin-top: 58px
         color: #d8d8d8

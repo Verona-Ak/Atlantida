@@ -126,3 +126,27 @@ append main_content
             +ourteam_item("img/our_team/man.jpg", "Rob Nils", "Photographer")
             +ourteam_item("img/our_team/woman.jpg", "Alice Li", "Editor")
             +ourteam_item("img/our_team/girl.jpg", "Jilia Smith", "Designer")
+    section.portfolio
+        +text("PORTFOLIO", "img/black_line.png", "Nullam lobortis, turpis lobortis placerat vehicula, ipsum lacus bibendum dolor, sit amet pretium odio magna eget risus. Phasellus iaculis ultricies duiNullam lobortis, turpis lobortis placerat vehicula, ipsum lacus bibendum dolor, sit amet pretium odio magna eget risus.")
+        .portfolio__buttons
+            +portfolio__btn('ALL')
+            +portfolio__btn('WEBSITE')
+            +portfolio__btn('BROCHURES')
+            +portfolio__btn('LOGOS')
+        .portfolio__album
+            .portfolio__column
+                +portfolio__item("BROCHURES", "img/portfolio/1.jpg", "417px")
+                +portfolio__item("WEBSITE", "img/portfolio/5.jpg", '271px')
+            .portfolio__column
+                +portfolio__item("WEBSITE", "img/portfolio/2.jpg", "304px")
+                +portfolio__item("BROCHURES", "img/portfolio/6.jpg", "385px")
+            .portfolio__column
+                +portfolio__item("BROCHURES", "img/portfolio/3.jpg", "230px")
+                +portfolio__item("LOGOS", "img/portfolio/7.jpg", "459px")
+            .portfolio__column    
+                +portfolio__item("WEBSITE", "img/portfolio/4.jpg", "436px")
+                +portfolio__item("LOGOS", "img/portfolio/8.jpg", "252px")
+                
+                
+                
+                

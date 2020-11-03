@@ -1,0 +1,41 @@
+.portfolio
+    min-height: 1049px
+    background-color: #ffffff
+    &__buttons
+        margin-top: 52px
+        display: flex
+        justify-content: center
+    &__btn
+        padding: 0 20px
+        height: 31px
+        background-color: #ffffff
+        border: 2px solid #3e3d3d
+        color: #3e3d3d
+        font-size: 11px
+        font-weight: 400
+        text-align: center
+        text-transform: uppercase
+        letter-spacing: 1.24px
+        margin-right: 5px
+        &:last-child
+            margin-right: 0
+        &:focus
+            background-color:#3e3d3d
+            color:#ffffff
+    &__album
+        margin-top: 64px
+        display: flex
+        justify-content: center
+    &__item
+        position: relative
+        img
+            display: block
+            object-fit: cover
+    &__fog
+        display: none
+        position: absolute
+        top: 0
+        left: 0
+        background-color: rgba(#ffff, .82)
+        &_active
+            display: block
