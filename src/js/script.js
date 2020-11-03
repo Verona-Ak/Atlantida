@@ -12,15 +12,26 @@ window.addEventListener('DOMContentLoaded', ()=> {
     let parent = document.querySelector('.ourteam__photo'),
         item = document.querySelectorAll('.ourteam__item');
 
-    parent.addEventListener('click', function(e) {
+    parent.addEventListener('mouseover', function(e) {
         for (let i = 0; i < item.length; i++) {
             let img = item[i].querySelector('img'),
                 inf = item[i].querySelector('.ourteam__inf');
-            if(e.target && e.target == img || e.target == inf) {
+            if(e.target && e.target == img) {
                 let inf = item[i].querySelector('.ourteam__inf');
                 inf.classList.toggle('ourteam__inf_active');
             }
         }
     });
+    parent.addEventListener('mouseout', function(e) {
+        for (let i = 0; i < item.length; i++) {
+            let img = item[i].querySelector('img'),
+                inf = item[i].querySelector('.ourteam__inf');
+            if(e.target && e.target == img) {
+                let inf = item[i].querySelector('.ourteam__inf');
+                inf.classList.toggle('ourteam__inf_active');
+            }
+        }
+    });
+
 
 });
