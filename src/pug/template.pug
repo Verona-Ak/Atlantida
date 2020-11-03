@@ -39,11 +39,7 @@ html(lang="en")
                     li.nav__item 
                         a.nav__link.active(href="#") Contact  
             .header__social
-                a.header__link(href="#"): img.header__mini-icon(src="img/header/icons/facebook.png", alt="facebook")
-                .header__border
-                a.header__link(href="#"): img.header__mini-icon(src="img/header/icons/tweter.png", alt="tweter")
-                .header__border
-                a.header__link(href="#"): img.header__mini-icon(src="img/header/icons/behance.png", alt="behance")
+                +social("img/header/icons/facebook.png", "img/header/icons/tweter.png", "img/header/icons/behance.png")
         block main_content
 
         script(src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous")

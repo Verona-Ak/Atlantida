@@ -36,4 +36,20 @@ mixin history__block(classforBlock, classforCircle, classforTriangle, classforSq
         .history__title #{title}
         .history__date #{date}
         .history__descr #{descr}
-    
+
+mixin social(facebook, twitter, behance)
+    a.header__link(href="#"): img.header__mini-icon(src=facebook, alt="facebook")
+    .header__border
+    a.header__link(href="#"): img.header__mini-icon(src=twitter, alt="twitter")
+    .header__border
+    a.header__link(href="#"): img.header__mini-icon(src=behance, alt="behance")
+
+mixin ourteam_item(src, name, profession)
+    .ourteam__item
+        img.ourteam__img(src=src alt="photo")
+        .ourteam__inf
+            .ourteam__name #{name}
+            .ourteam__profession #{profession}
+            .ourteam__line
+            .ourteam__social
+                +social("img/our_team/icons/facebook.png", "img/our_team/icons/tweter.png", "img/our_team/icons/behance.png")
