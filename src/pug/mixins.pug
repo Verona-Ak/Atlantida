@@ -26,3 +26,14 @@ mixin servicesCards(img, w1, w2, text)
             #[br]
             #{w2}
         .services__descr #{text}
+
+mixin history__block(classforBlock, classforCircle, classforTriangle, classforSquare1, title, date, descr)
+    .history__block(class=classforBlock)
+        .history__circle(class=classforCircle)
+        .history__triangle(class=classforTriangle)
+            .history__square1(class=classforSquare1)
+            .history__square2
+        .history__title #{title}
+        .history__date #{date}
+        .history__descr #{descr}
+    

@@ -31,18 +31,72 @@
         justify-content: center
     &__left-side
         border-right: 1px #3e3d3d solid
-        height: 661px
-        padding: 43px 0 38px 0
+        padding: 43px 28px 38px 0px
+        width: 50%
+        display: flex
+        flex-direction: column
+        justify-content: flex-start
+        align-items: flex-end
     &__right-side
         border-left: 1px #3e3d3d solid 
-        height: 661px
+        padding: 81px 0px 38px 28px
+        width: 50%
+        display: flex
+        flex-direction: column
+        justify-content: flex-start
+        align-items: flex-start
     &__block
+        position: relative
         width: 570px
-        border: 1px solid #3e3d3d
-        padding: 29px 23px 32px 23px
-        margin-right: 28px
+        border: 2px solid #3e3d3d
+        &:nth-child(2)
+            margin-top: 29px
+        &_left
+            padding: 29px 60px 32px 23px
+        &_right
+            padding: 29px 23px 32px 60px
+    &__triangle
+        position: absolute
+        right: -12px
+        top: 22px
+        &_left
+        &_right
+            left: -12px
+            transform: scale(-1, 1)
+
+    &__square1, &__square2 
+        position: absolute
+        border-top: 2px solid #3e3d3d
+        right: 0
+        top: 0
+        width: 12px
+        height: 12px
+        &_bg-light
+            background: #ededed
+        &_bg-dark
+            background: #3e3d3d
+    &__square2 
+        background: #ededed
+        border-top: none
+        border-left: 2px solid #3e3d3d
+        transform: rotate(40deg)
+        right: -3px
+        top: 2px
+        width: 11px
+        height: 16px
+    &__circle
+        position: absolute
+        width: 17px
+        height: 17px
+        background-color: #3e3d3d
+        border-radius: 50%
+        &_left
+            top: 16px
+            right: -40px
+        &_right
+            top: 16px
+            left: -40px
     &__title
-        color: #3e3d3d
         font-size: 13px
         font-weight: 400
         text-align: left
@@ -50,20 +104,22 @@
         letter-spacing: 1.47px
     &__date
         margin-top: 9px
-        color: #3e3d3d
         font-size: 11px
         font-weight: 400
         line-height: 18px
         text-align: left
     &__descr
         margin-top: 28px
-        color: #3e3d3d
         font-family: 'Crimson Text', serif
         font-size: 14px
         font-weight: 400
         line-height: 20.31px
         text-align: left
         letter-spacing: 1.4px
-
+    &_dark-text
+        color: #3e3d3d
+    &_light-text
+        color: #e4e4e4
+        background-color: #3e3d3d
 .mt
     margin-top: 42px

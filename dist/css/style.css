@@ -31,7 +31,7 @@ h6 {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 5;
   height: 63px;
   width: 100%;
   padding: 16px 214px 18px 214px;
@@ -455,24 +455,103 @@ h6 {
 
 .history__left-side {
   border-right: 1px #3e3d3d solid;
-  height: 661px;
-  padding: 43px 0 38px 0;
+  padding: 43px 28px 38px 0px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
 }
 
 .history__right-side {
   border-left: 1px #3e3d3d solid;
-  height: 661px;
+  padding: 81px 0px 38px 28px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .history__block {
+  position: relative;
   width: 570px;
-  border: 1px solid #3e3d3d;
-  padding: 29px 23px 32px 23px;
-  margin-right: 28px;
+  border: 2px solid #3e3d3d;
+}
+
+.history__block:nth-child(2) {
+  margin-top: 29px;
+}
+
+.history__block_left {
+  padding: 29px 60px 32px 23px;
+}
+
+.history__block_right {
+  padding: 29px 23px 32px 60px;
+}
+
+.history__triangle {
+  position: absolute;
+  right: -12px;
+  top: 22px;
+}
+
+.history__triangle_right {
+  left: -12px;
+  transform: scale(-1, 1);
+}
+
+.history__square1,
+.history__square2 {
+  position: absolute;
+  border-top: 2px solid #3e3d3d;
+  right: 0;
+  top: 0;
+  width: 12px;
+  height: 12px;
+}
+
+.history__square1_bg-light,
+.history__square2_bg-light {
+  background: #ededed;
+}
+
+.history__square1_bg-dark,
+.history__square2_bg-dark {
+  background: #3e3d3d;
+}
+
+.history__square2 {
+  background: #ededed;
+  border-top: none;
+  border-left: 2px solid #3e3d3d;
+  transform: rotate(40deg);
+  right: -3px;
+  top: 2px;
+  width: 11px;
+  height: 16px;
+}
+
+.history__circle {
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  background-color: #3e3d3d;
+  border-radius: 50%;
+}
+
+.history__circle_left {
+  top: 16px;
+  right: -40px;
+}
+
+.history__circle_right {
+  top: 16px;
+  left: -40px;
 }
 
 .history__title {
-  color: #3e3d3d;
   font-size: 13px;
   font-weight: 400;
   text-align: left;
@@ -482,7 +561,6 @@ h6 {
 
 .history__date {
   margin-top: 9px;
-  color: #3e3d3d;
   font-size: 11px;
   font-weight: 400;
   line-height: 18px;
@@ -491,13 +569,21 @@ h6 {
 
 .history__descr {
   margin-top: 28px;
-  color: #3e3d3d;
   font-family: 'Crimson Text', serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 20.31px;
   text-align: left;
   letter-spacing: 1.4px;
+}
+
+.history_dark-text {
+  color: #3e3d3d;
+}
+
+.history_light-text {
+  color: #e4e4e4;
+  background-color: #3e3d3d;
 }
 
 .mt {
