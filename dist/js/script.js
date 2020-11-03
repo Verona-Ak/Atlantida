@@ -34,6 +34,34 @@ window.addEventListener('DOMContentLoaded', ()=> {
     });
 
     // Портфолио
+    let buttons = document.querySelectorAll('.portfolio__btn'),
+        fog = document.querySelectorAll('.portfolio__fog');
+    buttons[0].classList.add('portfolio__btn_click');
+    buttons.forEach(function(item) {
+        item.addEventListener('click', function(e) {
+            for (let i = 0; i < buttons.length; i++) {
+                buttons[i].classList.remove('portfolio__btn_click');
+            }
+            this.classList.add('portfolio__btn_click');
+            for (let i = 0; i < fog.length; i++) {
+                fog[i].classList.remove('portfolio__fog_active');
+            }
+            let value = item.value;
+            if (value != 'all') {
+                let portfolioItems = document.querySelectorAll('[data-theme]');
+                for (let i = 0; i < portfolioItems.length; i++) {
+                    if (portfolioItems[i].getAttribute('data-theme') != value) {
+                        let fog = portfolioItems[i].querySelector('.portfolio__fog');
+                        fog.classList.add('portfolio__fog_active');
+                    }
+                }
+            } else {
+                return;
+            }
+        });
+    });
+
+        
 
 
 });

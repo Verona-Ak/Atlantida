@@ -704,7 +704,7 @@ h6 {
   margin-right: 0;
 }
 
-.portfolio__btn:focus {
+.portfolio__btn_click {
   background-color: #3e3d3d;
   color: #ffffff;
 }
@@ -730,7 +730,7 @@ h6 {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: rgba(255, 255, 255, 0.82);
+  background-color: rgba(255, 255, 255, 0.85);
 }
 
 .portfolio__fog_active {

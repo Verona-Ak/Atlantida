@@ -54,8 +54,8 @@ mixin ourteam_item(src, name, profession)
             .ourteam__social
                 +social("img/our_team/icons/facebook.png", "img/our_team/icons/tweter.png", "img/our_team/icons/behance.png")
 
-mixin portfolio__btn(name)
-    button.portfolio__btn #{name}
+mixin portfolio__btn(name, value)
+    button.portfolio__btn(value=value) #{name}
 
 mixin portfolio__item(theme, src, height, width="100%")
     .portfolio__item(data-theme=theme)
