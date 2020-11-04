@@ -1007,3 +1007,24 @@ h6 {
   text-align: left;
   letter-spacing: 1.4px;
 }
+
+.clients {
+  height: 524px;
+  background-color: #ffffff;
+}
+
+.clients__content {
+  margin: 0 auto;
+  margin-top: 77px;
+  display: flex;
+  justify-content: center;
+}
+
+.clients__img {
+  display: block;
+  margin-right: 90px;
+}
+
+.clients__img:last-child {
+  margin-right: 0;
+}
