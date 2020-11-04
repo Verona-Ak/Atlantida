@@ -1,10 +1,28 @@
-.carousel-control-prev-icon
-    background-image: url(../../img/header/icons/arrow_right.png)
-    @include carouselArrows
-.carousel-control-next-icon
-    background-image: url(../../img/header/icons/arrow_left.png)
-    @include carouselArrows
+.subheader
+    &__carousel
+        &-bg
+            height: 698px
+            background: url('../../img/header/bg_header.jpg') center center/cover no-repeat
+        &-control-prev-icon
+            background-image: url(../../img/header/icons/arrow_right.png)
+            @include carouselArrows
+        &-control-next-icon
+            background-image: url(../../img/header/icons/arrow_left.png)
+            @include carouselArrows
 
-.carousel-bg
-    height: 698px
-    background: url('../../img/header/bg_header.jpg') center center/cover no-repeat
+.reviews
+    &__carousel
+        &-bg
+            min-height: 524px
+            background: url('../../img/reviews/bg_reviews.jpg') center center/cover no-repeat
+        &-control-prev-icon, &-control-next-icon
+            background-image: none
+        &-caption
+            top: 81px
+.carousel-indicators 
+    li
+        width: 12px
+        height: 12px
+        border-radius: 50%
+        background-color: #e3e3e3
+    bottom: 33px

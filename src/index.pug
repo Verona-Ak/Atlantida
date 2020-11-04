@@ -8,19 +8,19 @@ append main_content
         div#carouselExampleControls.carousel.slide(data-ride="carousel")
             div.carousel-inner
                 div.carousel-item.active
-                    .d-block.w-100.carousel-bg
+                    .d-block.w-100.subheader__carousel-bg
                     include pug/_block_for_main_subheader.pug
                 div.carousel-item
-                    .d-block.w-100.carousel-bg
+                    .d-block.w-100.subheader__carousel-bg
                     include pug/_block_for_main_subheader.pug
                 div.carousel-item
-                    .d-block.w-100.carousel-bg
+                    .d-block.w-100.subheader__carousel-bg
                     include pug/_block_for_main_subheader.pug
             a.carousel-control-prev(href="#carouselExampleControls" role="button" data-slide="prev")
-                span.carousel-control-prev-icon(aria-hidden="true")
+                span.carousel-control-prev-icon.subheader__carousel-control-prev-icon(aria-hidden="true")
                 span.sr-only Previous
             a.carousel-control-next(href="#carouselExampleControls" role="button" data-slide="next")
-                span.carousel-control-next-icon(aria-hidden="true")
+                span.carousel-control-next-icon.subheader__carousel-control-next-icon(aria-hidden="true")
                 span.sr-only Next
     section.aboutus
         .aboutus__card
@@ -178,6 +178,8 @@ append main_content
             +clients__img('img/clients/hamburger.png')
             +clients__img('img/clients/motorcycles_shop.png')
             +clients__img('img/clients/cassandra.png')
-
+    section.reviews
+        include pug/_reviews.pug
+        
                 
                 

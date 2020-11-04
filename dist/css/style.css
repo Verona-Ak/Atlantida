@@ -120,21 +120,46 @@ h6 {
   font-weight: bold;
 }
 
-.carousel-control-prev-icon {
+.subheader__carousel-bg {
+  height: 698px;
+  background: url("../../img/header/bg_header.jpg") center center/cover no-repeat;
+}
+
+.subheader__carousel-control-prev-icon {
   background-image: url(../../img/header/icons/arrow_right.png);
   width: 34px;
   height: 34px;
 }
 
-.carousel-control-next-icon {
+.subheader__carousel-control-next-icon {
   background-image: url(../../img/header/icons/arrow_left.png);
   width: 34px;
   height: 34px;
 }
 
-.carousel-bg {
-  height: 698px;
-  background: url("../../img/header/bg_header.jpg") center center/cover no-repeat;
+.reviews__carousel-bg {
+  min-height: 524px;
+  background: url("../../img/reviews/bg_reviews.jpg") center center/cover no-repeat;
+}
+
+.reviews__carousel-control-prev-icon,
+.reviews__carousel-control-next-icon {
+  background-image: none;
+}
+
+.reviews__carousel-caption {
+  top: 81px;
+}
+
+.carousel-indicators {
+  bottom: 33px;
+}
+
+.carousel-indicators li {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #e3e3e3;
 }
 
 .subheader__main {
@@ -1027,4 +1052,70 @@ h6 {
 
 .clients__img:last-child {
   margin-right: 0;
+}
+
+.reviews {
+  height: 524px;
+}
+
+.reviews__photo {
+  display: block;
+  margin: 0 auto;
+}
+
+.reviews__review {
+  margin: 0 auto;
+  margin-top: 56px;
+  width: 770px;
+  height: 43px;
+  color: #efefef;
+  font-family: "Crimson Text", serif;
+  font-size: 20px;
+  font-style: italic;
+  line-height: 24px;
+  text-align: center;
+  position: relative;
+}
+
+.reviews__review::before {
+  content: "\275D";
+  top: 16px;
+  left: -35px;
+}
+
+.reviews__review::after {
+  content: '\275E';
+  top: 53px;
+  right: 141px;
+}
+
+.reviews__review::before,
+.reviews__review::after {
+  position: absolute;
+  color: #efefef;
+  font-family: "Crimson Text", serif;
+  font-size: 66px;
+  font-style: italic;
+  text-align: center;
+}
+
+.reviews__name {
+  margin-top: 68px;
+  color: #e3e3e3;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1.47px;
+}
+
+.reviews__company-name {
+  margin-top: 18px;
+  color: #efefef;
+  font-family: "Crimson Text", serif;
+  font-size: 14px;
+  font-style: italic;
+  line-height: 24px;
+  text-align: center;
 }
