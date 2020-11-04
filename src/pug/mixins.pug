@@ -61,3 +61,18 @@ mixin portfolio__item(theme, src, height, width="100%")
     .portfolio__item(data-theme=theme)
         img(src=src, alt=pic, style={height: height, width: width})
         .portfolio__fog(style={height: height, width: width})
+
+mixin prices__card(title, src, dollar, descr)
+    .prices__card
+        .prices__title #{title}
+        .prices__icon
+            img(src=src, alt="pic")
+        .prices__price #{dollar}
+        .prices__descr
+            .prices__thesis #{[descr[0]]}
+            .prices__thesis #{[descr[1]]}
+            .prices__thesis #{[descr[2]]}
+            .prices__thesis #{[descr[3]]}
+            .prices__thesis #{[descr[4]]}
+        button.prices__button Sign Up
+

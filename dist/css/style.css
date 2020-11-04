@@ -736,3 +736,112 @@ h6 {
 .portfolio__fog_active {
   display: block;
 }
+
+.prices {
+  min-height: 921px;
+  background-color: #e3e3e3;
+}
+
+.prices__content {
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+}
+
+.prices__card {
+  width: 369px;
+  height: 551px;
+  background-color: #ffffff;
+  margin-right: 29px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.prices__card:last-child {
+  margin-right: 0;
+}
+
+.prices__title {
+  margin-top: 46px;
+  color: #3e3d3d;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1.47px;
+}
+
+.prices__icon {
+  margin-top: 26px;
+  width: 51px;
+  height: 50px;
+  border: 2px solid #3e3d3d;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.prices__icon img {
+  display: block;
+}
+
+.prices__price {
+  margin-top: 35px;
+  width: 70px;
+  height: 51px;
+  color: #3e3d3d;
+  font-family: Montserrat;
+  font-size: 70px;
+  font-weight: 700;
+  text-align: center;
+  position: relative;
+}
+
+.prices__price::before {
+  content: '\0024';
+  position: absolute;
+  top: 7px;
+  left: -24px;
+  width: 16px;
+  height: 24px;
+  color: #3e3d3d;
+  font-size: 28px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.prices__descr {
+  margin-top: 52px;
+  width: 154px;
+  height: 132px;
+}
+
+.prices__thesis {
+  color: #3e3d3d;
+  font-family: "Crimson Text", serif;
+  font-size: 16px;
+  font-style: italic;
+  line-height: 30px;
+  text-align: center;
+}
+
+.prices__button {
+  margin-top: 51px;
+  width: 135px;
+  height: 39px;
+  background-color: #ffffff;
+  border: 2px solid #3e3d3d;
+  color: #3e3d3d;
+  font-size: 13px;
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 1.47px;
+}
+
+.prices__button_click {
+  background-color: #3e3d3d;
+  color: #ffffff;
+}
