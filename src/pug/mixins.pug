@@ -76,10 +76,10 @@ mixin prices__card(title, src, dollar, descr)
             .prices__thesis #{[descr[4]]}
         button.prices__button Sign Up
 
-mixin blog__elem-text(bgColor, date, title, descr)
+mixin blog__elem-text(bgColor, lineColor, date, title, descr)
     .blog__elem.blog__elem-text(style={background: bgColor})
         .blog__date #{date}
-        .blog__line
+        .blog__line(style={background: lineColor})
         .blog__title #{title}
         .blog__descr #{descr}
 mixin blog__elem-pic(src)
