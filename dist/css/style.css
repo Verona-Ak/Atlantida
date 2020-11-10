@@ -122,24 +122,24 @@ h6 {
 
 .subheader__carousel-bg {
   height: 698px;
-  background: url("../../img/header/bg_header.jpg") center center/cover no-repeat;
+  background: url("../../img/main/header/bg_header.jpg") center center/cover no-repeat;
 }
 
 .subheader__carousel-control-prev-icon {
-  background-image: url(../../img/header/icons/arrow_right.png);
+  background-image: url(../../img/main/header/icons/arrow_right.png);
   width: 34px;
   height: 34px;
 }
 
 .subheader__carousel-control-next-icon {
-  background-image: url(../../img/header/icons/arrow_left.png);
+  background-image: url(../../img/main/header/icons/arrow_left.png);
   width: 34px;
   height: 34px;
 }
 
 .reviews__carousel-bg {
   min-height: 524px;
-  background: url("../../img/reviews/bg_reviews.jpg") center center/cover no-repeat;
+  background: url("../../img/main/reviews/bg_reviews.jpg") center center/cover no-repeat;
 }
 
 .reviews__carousel-control-prev-icon,
@@ -363,7 +363,7 @@ h6 {
 
 .services {
   height: 742px;
-  background: url("../img/servises/bg_servises.jpg") center center/cover no-repeat;
+  background: url("../img/main/servises/bg_servises.jpg") center center/cover no-repeat;
 }
 
 .services__container {
@@ -617,7 +617,7 @@ h6 {
 
 .ourteam {
   min-height: 666px;
-  background: url("../../img/our_team/bg_ourteam.jpg") center center/cover no-repeat;
+  background: url("../../img/main/our_team/bg_ourteam.jpg") center center/cover no-repeat;
 }
 
 .ourteam__photo {
@@ -1013,7 +1013,7 @@ h6 {
 }
 
 .blog__title::before {
-  content: url("../../img/blog/arrow_small.png");
+  content: url("../../img/main/blog/arrow_small.png");
   position: absolute;
   width: 4px;
   height: 7px;
@@ -1125,7 +1125,7 @@ h6 {
 }
 
 .footer {
-  background: url("../img/footer/bg_footer.jpg") center center/cover no-repeat;
+  background: url("../img/main/footer/bg_footer.jpg") center center/cover no-repeat;
   height: 647px;
   width: 100%;
   padding: 59px 214px 38px 214px;

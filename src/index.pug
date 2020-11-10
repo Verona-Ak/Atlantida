@@ -24,42 +24,42 @@ append main_content
                 span.sr-only Next
     section.aboutus
         .aboutus__card
-            img.aboutus__img(src="img/about_us/bg_about.jpg", alt="pic")
+            img.aboutus__img(src="img/main/about_us/bg_about.jpg", alt="pic")
             .aboutus__text-block
                 +text(
                     'ABOUT US', 
-                    'img/black_line.png', 
+                    'img/main/black_line.png', 
                     'Donec aliquet, ipsum ut lobortis facilisis, nisi ligula aliquam odio, ut vehicula odio lorem in erat. Quisque quam ipsum, commodo non condimentum a, fermentum id sapien. Pellentesque sit amet sem neque. Maecenas est enim, sollicitudin sit amet nisi vel, mattis efficitur sapien. Nulla lobortis dui in aliquam placerat. Maecenas commodo odio nec neque imperdiet sagittis. Fusce mauris tellus, vulputate id finibus a, rutrum et justo. Vivamus at eros sed justo laoreet mattis vulputate vel magna. Sed quis pulvinar quam, et tempus purus. Fusce et nisi eget dui hendrerit iaculis. Cras volutpat augue tempor viverra tincidunt. Maecenas interdum scelerisque enim. Aenean interdum leo ac lectus gravida, id tincidunt sem finibus. Curabitur ac arcu blandit, tempus leo id, ultrices ante.'
                 )  
                 .aboutus__buttons
                     button.aboutus__button.aboutus__button_black Contact Us
                     button.aboutus__button.aboutus__button_white Portfolio
             .aboutus__results
-                +rezult("img/about_us/about/awards.png", 'AWARDS', 'WINNER', 54)
-                +rezult("img/about_us/about/done.png", 'JOBS', 'DONE', 1054)
-                +rezult("img/about_us/about/clients.png", 'HAPPY', 'CLIENTS', 120)
-                +rezult("img/about_us/about/reviews.png", 'reviews', 'recieved', 54)
+                +rezult("img/main/about_us/about/awards.png", 'AWARDS', 'WINNER', 54)
+                +rezult("img/main/about_us/about/done.png", 'JOBS', 'DONE', 1054)
+                +rezult("img/main/about_us/about/clients.png", 'HAPPY', 'CLIENTS', 120)
+                +rezult("img/main/about_us/about/reviews.png", 'reviews', 'recieved', 54)
     section.services
         - colorTitle = 'white';
         - colorParag = 'light';
         - center = true;
         +text(
             'SERVICES', 
-            'img/white_line.png', 
+            'img/main/white_line.png', 
             'Donec aliquet, ipsum ut lobortis facilisis, nisi ligula aliquam odio, ut vehicula odio lorem in erat. Quisque quam ipsum, commodo non condimentum a, fermentum id sapien. Pellentesque sit amet sem neque. '
         )
         .services__container
-            +servicesCards('img/servises/icons/graphic.png', 'GRAPHIC', 'DESIGN', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed ipsum pulvinar, consequat ipsum non, sodales augue. Donec dapibus ipsum rutrum congue egestas. Curabitur fringilla tortor non aliquam congue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.')
-            +servicesCards('img/servises/icons/website.png', 'WEBSITE', 'DESIGN', 'Nunc non sem vitae neque tristique pellentesque. Donec vitae vehicula mauris. Proin elementum mauris ut ante tristique rutrum. Quisque tristique, dui iaculis commodo consectetur, libero nibh tincidunt tortor, in sollicitudin arcu tellus non puruslibero nibh tincidunt tortor, in sollicitudin arcu.')
-            +servicesCards('img/servises/icons/seo.png', 'SEO &', 'ANALITYCS', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed ipsum pulvinar, consequat ipsum non, sodales augue. Donec dapibus ipsum rutrum congue egestas. Curabitur fringilla tortor non aliquam congue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.')
-            +servicesCards('img/servises/icons/wordpress.png', 'WORDPRESS', 'PROGRAMING', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed ipsum pulvinar, consequat ipsum non, sodales augue. Donec dapibus ipsum rutrum congue egestas. Curabitur fringilla tortor non aliquam congue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.')
+            +servicesCards('img/main/servises/icons/graphic.png', 'GRAPHIC', 'DESIGN', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed ipsum pulvinar, consequat ipsum non, sodales augue. Donec dapibus ipsum rutrum congue egestas. Curabitur fringilla tortor non aliquam congue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.')
+            +servicesCards('img/main/servises/icons/website.png', 'WEBSITE', 'DESIGN', 'Nunc non sem vitae neque tristique pellentesque. Donec vitae vehicula mauris. Proin elementum mauris ut ante tristique rutrum. Quisque tristique, dui iaculis commodo consectetur, libero nibh tincidunt tortor, in sollicitudin arcu tellus non puruslibero nibh tincidunt tortor, in sollicitudin arcu.')
+            +servicesCards('img/main/servises/icons/seo.png', 'SEO &', 'ANALITYCS', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed ipsum pulvinar, consequat ipsum non, sodales augue. Donec dapibus ipsum rutrum congue egestas. Curabitur fringilla tortor non aliquam congue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.')
+            +servicesCards('img/main/servises/icons/wordpress.png', 'WORDPRESS', 'PROGRAMING', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed ipsum pulvinar, consequat ipsum non, sodales augue. Donec dapibus ipsum rutrum congue egestas. Curabitur fringilla tortor non aliquam congue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.')
     section.history
         - colorTitle = 'black';
         - colorParag = 'dark';
         - center = true;
         +text(
             'HISTORY', 
-            'img/black_line.png', 
+            'img/main/black_line.png', 
             'In pulvinar, mi at rhoncus condimentum, turpis nisl scelerisque turpis, ut gravida eros tortor non arcu. In eget arcu ante. Curabitur lacinia ultricies ante, eget mattis orci vestibulum sit amet.'
         )
         .history__year.mt 2015
@@ -119,15 +119,15 @@ append main_content
                     "05 June 2014", 
                     "In pulvinar, mi at rhoncus condimentum, turpis nisl scelerisque turpis, ut gravida eros tortor non arcu. In eget arcu ante. Curabitur lacinia ultricies ante, eget mattis orci vestibulum sit amet. Donec quis faucibus lorem.")
         .history__icon
-            img(src='img/servises/icons/graphic.png', alt='lamp')
+            img(src='img/main/servises/icons/graphic.png', alt='lamp')
     section.ourteam
-        +text("OUR TEAM", "img/black_line.png", "Nullam lobortis, turpis lobortis placerat vehicula, ipsum lacus bibendum dolor, sit amet pretium odio magna eget risus. Phasellus iaculis ultricies duiNullam lobortis, turpis lobortis placerat vehicula, ipsum lacus bibendum dolor, sit amet pretium odio magna eget risus.")
+        +text("OUR TEAM", "img/main/black_line.png", "Nullam lobortis, turpis lobortis placerat vehicula, ipsum lacus bibendum dolor, sit amet pretium odio magna eget risus. Phasellus iaculis ultricies duiNullam lobortis, turpis lobortis placerat vehicula, ipsum lacus bibendum dolor, sit amet pretium odio magna eget risus.")
         .ourteam__photo
-            +ourteam_item("img/our_team/man.jpg", "Rob Nils", "Photographer")
-            +ourteam_item("img/our_team/woman.jpg", "Alice Li", "Editor")
-            +ourteam_item("img/our_team/girl.jpg", "Jilia Smith", "Designer")
+            +ourteam_item("img/main/our_team/man.jpg", "Rob Nils", "Photographer")
+            +ourteam_item("img/main/our_team/woman.jpg", "Alice Li", "Editor")
+            +ourteam_item("img/main/our_team/girl.jpg", "Jilia Smith", "Designer")
     section.portfolio
-        +text("PORTFOLIO", "img/black_line.png", "Nullam lobortis, turpis lobortis placerat vehicula, ipsum lacus bibendum dolor, sit amet pretium odio magna eget risus. Phasellus iaculis ultricies duiNullam lobortis, turpis lobortis placerat vehicula, ipsum lacus bibendum dolor, sit amet pretium odio magna eget risus.")
+        +text("PORTFOLIO", "img/main/black_line.png", "Nullam lobortis, turpis lobortis placerat vehicula, ipsum lacus bibendum dolor, sit amet pretium odio magna eget risus. Phasellus iaculis ultricies duiNullam lobortis, turpis lobortis placerat vehicula, ipsum lacus bibendum dolor, sit amet pretium odio magna eget risus.")
         .portfolio__buttons
             +portfolio__btn('ALL', 'all')
             +portfolio__btn('WEBSITE', "website")
@@ -135,49 +135,49 @@ append main_content
             +portfolio__btn('LOGOS', 'logs')
         .portfolio__album
             .portfolio__column
-                +portfolio__item("brochures", "img/portfolio/1.jpg", "417px")
-                +portfolio__item("website", "img/portfolio/5.jpg", '271px')
+                +portfolio__item("brochures", "img/main/portfolio/1.jpg", "417px")
+                +portfolio__item("website", "img/main/portfolio/5.jpg", '271px')
             .portfolio__column
-                +portfolio__item("website", "img/portfolio/2.jpg", "304px")
-                +portfolio__item("brochures", "img/portfolio/6.jpg", "385px")
+                +portfolio__item("website", "img/main/portfolio/2.jpg", "304px")
+                +portfolio__item("brochures", "img/main/portfolio/6.jpg", "385px")
             .portfolio__column
-                +portfolio__item("brochures", "img/portfolio/3.jpg", "230px")
-                +portfolio__item("logs", "img/portfolio/7.jpg", "459px")
+                +portfolio__item("brochures", "img/main/portfolio/3.jpg", "230px")
+                +portfolio__item("logs", "img/main/portfolio/7.jpg", "459px")
             .portfolio__column    
-                +portfolio__item("website", "img/portfolio/4.jpg", "436px")
-                +portfolio__item("logs", "img/portfolio/8.jpg", "252px")
+                +portfolio__item("website", "img/main/portfolio/4.jpg", "436px")
+                +portfolio__item("logs", "img/main/portfolio/8.jpg", "252px")
     section.prices
-        +text("PRICES", "img/black_line.png", "Nullam lobortis, turpis lobortis placerat vehicula, ipsum lacus bibendum dolor, sit amet pretium odio magna eget risus. Phasellus iaculis ultricies duiNullam lobortis, turpis lobortis placerat vehicula, ipsum lacus bibendum dolor, sit amet pretium odio magna eget risus.")            
+        +text("PRICES", "img/main/black_line.png", "Nullam lobortis, turpis lobortis placerat vehicula, ipsum lacus bibendum dolor, sit amet pretium odio magna eget risus. Phasellus iaculis ultricies duiNullam lobortis, turpis lobortis placerat vehicula, ipsum lacus bibendum dolor, sit amet pretium odio magna eget risus.")            
         .prices__content
-            +prices__card("BASIC", "img/prices/icons/basic.png", "10", ['Full Access', 'Unlimited Edition', 'Full Backup', 'Free Tea and Free Mockup', 'Several Prices'])
-            +prices__card("ADVANCED", "img/prices/icons/advanced.png", "20", ['Full Access', 'Unlimited Edition', 'Full Backup', 'Free Tea and Free Mockup', 'Several Prices'])
-            +prices__card("PRO", "img/prices/icons/pro.png", "30", ['Full Access', 'Unlimited Edition', 'Full Backup', 'Free Tea and Free Mockup', 'Several Prices'])
+            +prices__card("BASIC", "img/main/prices/icons/basic.png", "10", ['Full Access', 'Unlimited Edition', 'Full Backup', 'Free Tea and Free Mockup', 'Several Prices'])
+            +prices__card("ADVANCED", "img/main/prices/icons/advanced.png", "20", ['Full Access', 'Unlimited Edition', 'Full Backup', 'Free Tea and Free Mockup', 'Several Prices'])
+            +prices__card("PRO", "img/main/prices/icons/pro.png", "30", ['Full Access', 'Unlimited Edition', 'Full Backup', 'Free Tea and Free Mockup', 'Several Prices'])
     section.space
         .space__content
-            img.space__img(src='img/compass.png' alt="pic")
+            img.space__img(src='img/main/compass.png' alt="pic")
             .space__descr
                 .space__title Looking for a quality and affordable for your next project ?
                 .space__paragraph Lorem ipsum dolor sit amet consectetur adipiscing elit. Curabitur eu libero ut erat sodales finibus sed in dolor. #[br]Etiam iaculis, nibh a lobortis egestas, est urna sodales
             button.space__button Purchase
     section.blog
-        +text("BLOG", "img/black_line.png", "Nullam lobortis, turpis lobortis placerat vehicula, ipsum lacus bibendum dolor, sit amet pretium odio magna eget risus. Phasellus iaculis ultricies duiNullam lobortis, turpis lobortis placerat vehicula, ipsum lacus bibendum dolor, sit amet pretium odio magna eget risus.") 
+        +text("BLOG", "img/main/black_line.png", "Nullam lobortis, turpis lobortis placerat vehicula, ipsum lacus bibendum dolor, sit amet pretium odio magna eget risus. Phasellus iaculis ultricies duiNullam lobortis, turpis lobortis placerat vehicula, ipsum lacus bibendum dolor, sit amet pretium odio magna eget risus.") 
         .blog__content
-            +blog__elem-pic('img/blog/image1.jpg')
+            +blog__elem-pic('img/main/blog/image1.jpg')
             +blog__elem-text("#424244", "#565656", "14 Aug 2015 / By Admin", "Donec id lobortis tellus Maecenas.", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed ipsum pulvinar, consequat ipsum non, sodales augue. Donec dapibus ipsum rutrum congue egestas. Curabitur fringilla tortor non aliquam congue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur fringilla tortor non aliquam congue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.")
-            +blog__elem-pic('img/blog/image2.jpg')
+            +blog__elem-pic('img/main/blog/image2.jpg')
             +blog__elem-text("#2d2d2f", "#454545", "14 Aug 2015 / By Admin", "Donec id lobortis tellus Maecenas.", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed ipsum pulvinar, consequat ipsum non, sodales augue. Donec dapibus ipsum rutrum congue egestas. Curabitur fringilla tortor non aliquam congue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur fringilla tortor non aliquam congue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.")
-            +blog__elem-pic('img/blog/image3.jpg')
+            +blog__elem-pic('img/main/blog/image3.jpg')
             +blog__elem-text("#232325", '#454545', "14 Aug 2015 / By Admin", "Donec id lobortis tellus Maecenas.", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed ipsum pulvinar, consequat ipsum non, sodales augue. Donec dapibus ipsum rutrum congue egestas. Curabitur fringilla tortor non aliquam congue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur fringilla tortor non aliquam congue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.")
-            +blog__elem-pic('img/blog/image4.jpg')
+            +blog__elem-pic('img/main/blog/image4.jpg')
             +blog__elem-text("#555557", '#454545', "14 Aug 2015 / By Admin", "Donec id lobortis tellus Maecenas.", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed ipsum pulvinar, consequat ipsum non, sodales augue. Donec dapibus ipsum rutrum congue egestas. Curabitur fringilla tortor non aliquam congue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur fringilla tortor non aliquam congue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.")
     section.clients
-        +text("CLIENTS", "img/black_line.png", "Nullam lobortis, turpis lobortis placerat vehicula, ipsum lacus bibendum dolor, sit amet pretium odio magna eget risus. Phasellus iaculis ultricies duiNullam lobortis, turpis lobortis placerat vehicula, ipsum lacus bibendum dolor, sit amet pretium odio magna eget risus.")
+        +text("CLIENTS", "img/main/black_line.png", "Nullam lobortis, turpis lobortis placerat vehicula, ipsum lacus bibendum dolor, sit amet pretium odio magna eget risus. Phasellus iaculis ultricies duiNullam lobortis, turpis lobortis placerat vehicula, ipsum lacus bibendum dolor, sit amet pretium odio magna eget risus.")
         .clients__content
-            +clients__img('img/clients/brando_ebsen.png')
-            +clients__img('img/clients/workwear.png')
-            +clients__img('img/clients/hamburger.png')
-            +clients__img('img/clients/motorcycles_shop.png')
-            +clients__img('img/clients/cassandra.png')
+            +clients__img('img/main/clients/brando_ebsen.png')
+            +clients__img('img/main/clients/workwear.png')
+            +clients__img('img/main/clients/hamburger.png')
+            +clients__img('img/main/clients/motorcycles_shop.png')
+            +clients__img('img/main/clients/cassandra.png')
     section.reviews
         include pug/_reviews.pug
     .map#map 
@@ -195,7 +195,7 @@ append main_content
                 position: {lat: 21.581459, lng: 105.825004},  
                 map: myMap,
                 animation: google.maps.Animation.BOUNCE,
-                icon: '../img/map/flag.png',
+                icon: '../img/main/map/flag.png',
             });
 
             marker.addListener('click', function(){
