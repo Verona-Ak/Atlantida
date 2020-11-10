@@ -3,7 +3,7 @@ include pug/mixins.pug
 append title
     |  Home
 append main_content
-    section.subheader__main
+    section.subheader__main#home
         .subheader__nav
         div#carouselExampleControls.carousel.slide(data-ride="carousel")
             div.carousel-inner
@@ -22,7 +22,7 @@ append main_content
             a.carousel-control-next(href="#carouselExampleControls" role="button" data-slide="next")
                 span.carousel-control-next-icon.subheader__carousel-control-next-icon(aria-hidden="true")
                 span.sr-only Next
-    section.aboutus
+    section.aboutus#about
         .aboutus__card
             img.aboutus__img(src="img/main/about_us/bg_about.jpg", alt="pic")
             .aboutus__text-block
@@ -39,7 +39,7 @@ append main_content
                 +rezult("img/main/about_us/about/done.png", 'JOBS', 'DONE', 1054)
                 +rezult("img/main/about_us/about/clients.png", 'HAPPY', 'CLIENTS', 120)
                 +rezult("img/main/about_us/about/reviews.png", 'reviews', 'recieved', 54)
-    section.services
+    section.services#services
         - colorTitle = 'white';
         - colorParag = 'light';
         - center = true;
@@ -53,7 +53,7 @@ append main_content
             +servicesCards('img/main/servises/icons/website.png', 'WEBSITE', 'DESIGN', 'Nunc non sem vitae neque tristique pellentesque. Donec vitae vehicula mauris. Proin elementum mauris ut ante tristique rutrum. Quisque tristique, dui iaculis commodo consectetur, libero nibh tincidunt tortor, in sollicitudin arcu tellus non puruslibero nibh tincidunt tortor, in sollicitudin arcu.')
             +servicesCards('img/main/servises/icons/seo.png', 'SEO &', 'ANALITYCS', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed ipsum pulvinar, consequat ipsum non, sodales augue. Donec dapibus ipsum rutrum congue egestas. Curabitur fringilla tortor non aliquam congue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.')
             +servicesCards('img/main/servises/icons/wordpress.png', 'WORDPRESS', 'PROGRAMING', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed ipsum pulvinar, consequat ipsum non, sodales augue. Donec dapibus ipsum rutrum congue egestas. Curabitur fringilla tortor non aliquam congue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.')
-    section.history
+    section.history#history
         - colorTitle = 'black';
         - colorParag = 'dark';
         - center = true;
@@ -120,13 +120,13 @@ append main_content
                     "In pulvinar, mi at rhoncus condimentum, turpis nisl scelerisque turpis, ut gravida eros tortor non arcu. In eget arcu ante. Curabitur lacinia ultricies ante, eget mattis orci vestibulum sit amet. Donec quis faucibus lorem.")
         .history__icon
             img(src='img/main/servises/icons/graphic.png', alt='lamp')
-    section.ourteam
+    section.ourteam#team
         +text("OUR TEAM", "img/main/black_line.png", "Nullam lobortis, turpis lobortis placerat vehicula, ipsum lacus bibendum dolor, sit amet pretium odio magna eget risus. Phasellus iaculis ultricies duiNullam lobortis, turpis lobortis placerat vehicula, ipsum lacus bibendum dolor, sit amet pretium odio magna eget risus.")
         .ourteam__photo
             +ourteam_item("img/main/our_team/man.jpg", "Rob Nils", "Photographer")
             +ourteam_item("img/main/our_team/woman.jpg", "Alice Li", "Editor")
             +ourteam_item("img/main/our_team/girl.jpg", "Jilia Smith", "Designer")
-    section.portfolio
+    section.portfolio#portfolio
         +text("PORTFOLIO", "img/main/black_line.png", "Nullam lobortis, turpis lobortis placerat vehicula, ipsum lacus bibendum dolor, sit amet pretium odio magna eget risus. Phasellus iaculis ultricies duiNullam lobortis, turpis lobortis placerat vehicula, ipsum lacus bibendum dolor, sit amet pretium odio magna eget risus.")
         .portfolio__buttons
             +portfolio__btn('ALL', 'all')
@@ -146,7 +146,7 @@ append main_content
             .portfolio__column    
                 +portfolio__item("website", "img/main/portfolio/4.jpg", "436px")
                 +portfolio__item("logs", "img/main/portfolio/8.jpg", "252px")
-    section.prices
+    section.prices#prices
         +text("PRICES", "img/main/black_line.png", "Nullam lobortis, turpis lobortis placerat vehicula, ipsum lacus bibendum dolor, sit amet pretium odio magna eget risus. Phasellus iaculis ultricies duiNullam lobortis, turpis lobortis placerat vehicula, ipsum lacus bibendum dolor, sit amet pretium odio magna eget risus.")            
         .prices__content
             +prices__card("BASIC", "img/main/prices/icons/basic.png", "10", ['Full Access', 'Unlimited Edition', 'Full Backup', 'Free Tea and Free Mockup', 'Several Prices'])
@@ -159,7 +159,7 @@ append main_content
                 .space__title Looking for a quality and affordable for your next project ?
                 .space__paragraph Lorem ipsum dolor sit amet consectetur adipiscing elit. Curabitur eu libero ut erat sodales finibus sed in dolor. #[br]Etiam iaculis, nibh a lobortis egestas, est urna sodales
             button.space__button Purchase
-    section.blog
+    section.blog#blog
         +text("BLOG", "img/main/black_line.png", "Nullam lobortis, turpis lobortis placerat vehicula, ipsum lacus bibendum dolor, sit amet pretium odio magna eget risus. Phasellus iaculis ultricies duiNullam lobortis, turpis lobortis placerat vehicula, ipsum lacus bibendum dolor, sit amet pretium odio magna eget risus.") 
         .blog__content
             +blog__elem-pic('img/main/blog/image1.jpg')
