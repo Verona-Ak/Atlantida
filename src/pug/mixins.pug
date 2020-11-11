@@ -1,6 +1,6 @@
 mixin text(title, src, paragraph)
     .text
-        .text__title(class={text__title_color: colorTitle === 'white'}) 
+        h2.text__title(class={text__title_color: colorTitle === 'white'}) 
             | #{title}
         img.text__line(src=src, alt="line")
         .text__paragraph(
@@ -88,3 +88,20 @@ mixin blog__elem-pic(src)
 mixin clients__img(src)
     img.clients__img(src=src, alt='pic')
 
+mixin main-blog__content(src, title, date, num, watch, cases, descr)
+    .main-blog__content
+        img.main-blog__img(src=src, alt='pic')
+        h2.main-blog__title #{title}
+        .main-blog__date #{date}
+        .main-blog__statistics
+            .main-blog__statistic
+                img.main-blog__img(src='../img/blog/blog/icons/comments.svg')
+                .main-blog__num #{num}
+            .main-blog__statistic
+                img.main-blog__img(src='../img/blog/blog/icons/watch.svg')
+                .main-blog__num #{watch}
+            .main-blog__statistic
+                img.main-blog__img(src='../img/blog/blog/icons/case.svg')
+                .main-blog__num #{cases}
+        .main-blog__descr #{descr}
+        button.main-blog__button Read More

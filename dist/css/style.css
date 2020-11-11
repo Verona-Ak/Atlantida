@@ -35,7 +35,7 @@ h6 {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 5;
+  z-index: 20;
   height: 63px;
   width: 100%;
   padding: 16px 214px 18px 214px;
@@ -1334,4 +1334,108 @@ h6 {
   line-height: 1;
   text-align: center;
   letter-spacing: 1.4px;
+}
+
+.wrapper-blog {
+  height: 4151px;
+  background-color: #e3e3e3;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  padding: 86px 0 83px 0;
+}
+
+.main-blog__content {
+  width: 821px;
+  margin-top: 53px;
+}
+
+.main-blog__content:first-child {
+  margin-top: 0;
+}
+
+.main-blog__img {
+  display: block;
+}
+
+.main-blog__title {
+  margin-top: 40px;
+  color: #3e3d3d;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 1.81px;
+}
+
+.main-blog__date {
+  margin-top: 12px;
+  color: #3e3d3d;
+  font-family: "Crimson Text", serif;
+  font-size: 14px;
+  font-style: italic;
+  line-height: 18px;
+  text-align: left;
+}
+
+.main-blog__statistics {
+  height: 37px;
+  margin-top: 19px;
+  padding-left: 6px;
+  border-top: 1px solid #b7b7b7;
+  border-bottom: 1px solid #b7b7b7;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.main-blog__statistic {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-right: 15px;
+}
+
+.main-blog__statistic:last-child {
+  margin-right: 0;
+}
+
+.main-blog__img {
+  display: block;
+  margin-right: 10px;
+}
+
+.main-blog__num {
+  color: #818181;
+  font-family: "Crimson Text", serif;
+  font-size: 14px;
+  font-style: italic;
+  line-height: 18px;
+  text-align: left;
+}
+
+.main-blog__descr {
+  margin-top: 29px;
+  color: #3e3d3d;
+  font-family: "Crimson Text", serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 25px;
+  text-align: left;
+  letter-spacing: 1.4px;
+}
+
+.main-blog__button {
+  margin-top: 26px;
+  width: 135px;
+  height: 39px;
+  border: 2px solid #3e3d3d;
+  background-color: #e3e3e3;
+  color: #3e3d3d;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1;
+  text-align: center;
+  letter-spacing: 1.47px;
 }
