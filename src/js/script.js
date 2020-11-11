@@ -61,6 +61,16 @@ window.addEventListener('DOMContentLoaded', ()=> {
         });
     });
 
+    // Переход к странице Блок
+    // let titles = document.getElementsByClassName('text__title-words');
+    // console.log(titles);
+    // titles.addEventListener('mouseover', (e)=> {
+       
+        
+    // });
+    // titles.addEventListener('mouseout', (e)=> {
+        
+    // });
     
 
 });

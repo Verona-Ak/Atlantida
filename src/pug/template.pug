@@ -1,4 +1,5 @@
-
+block variables
+    include ./var.pug
 <!DOCTYPE html>
 html(lang="en")
     head
@@ -21,23 +22,23 @@ html(lang="en")
             nav.nav
                 ul.nav__list
                     li.nav__item 
-                        a.nav__link.active(href="#home") Home 
+                        a.nav__link.active(href="index.html#home") Home 
                     li.nav__item 
-                        a.nav__link.active(href="#about") About 
+                        a.nav__link.active(href="index.html#about") About 
                     li.nav__item 
-                        a.nav__link.active(href="#services") SERVICES 
+                        a.nav__link.active(href="index.html#services") SERVICES 
                     li.nav__item 
-                        a.nav__link.active(href="#history") History 
+                        a.nav__link.active(href="index.html#history") History 
                     li.nav__item 
-                        a.nav__link.active(href="#team") Team 
+                        a.nav__link.active(href="index.html#team") Team 
                     li.nav__item 
-                        a.nav__link.active(href="#portfolio") Portfolio 
+                        a.nav__link.active(href="index.html#portfolio") Portfolio 
                     li.nav__item 
-                        a.nav__link.active(href="#prices") Prices 
+                        a.nav__link.active(href="index.html#prices") Prices 
                     li.nav__item 
-                        a.nav__link.active(href="#blog") Blog 
+                        a.nav__link.active(href="blog.html") Blog 
                     li.nav__item 
-                        a.nav__link.active(href="#map") Contact  
+                        a.nav__link.active(href="index.html#map") Contact  
             .header__social
                 +social("img/main/header/icons/facebook.png", "img/main/header/icons/tweter.png", "img/main/header/icons/behance.png")
         block main_content

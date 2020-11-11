@@ -1,8 +1,7 @@
 mixin text(title, src, paragraph)
     .text
-        h2.text__title(
-            class={text__title_color: colorTitle === 'white'},
-        ) #{title}
+        .text__title(class={text__title_color: colorTitle === 'white'}) 
+            | #{title}
         img.text__line(src=src, alt="line")
         .text__paragraph(
             class={text__paragraph_color: colorParag === 'light'},

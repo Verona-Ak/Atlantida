@@ -3,24 +3,24 @@ include pug/mixins.pug
 append title
     |  Home
 append main_content
-    section.subheader__main#home
+    section.subheader-main#home
         .subheader__nav
         div#carouselExampleControls.carousel.slide(data-ride="carousel")
             div.carousel-inner
                 div.carousel-item.active
-                    .d-block.w-100.subheader__carousel-bg
+                    .d-block.w-100.subheader-main__carousel-bg
                     include pug/_block_for_main_subheader.pug
                 div.carousel-item
-                    .d-block.w-100.subheader__carousel-bg
+                    .d-block.w-100.subheader-main__carousel-bg
                     include pug/_block_for_main_subheader.pug
                 div.carousel-item
-                    .d-block.w-100.subheader__carousel-bg
+                    .d-block.w-100.subheader-main__carousel-bg
                     include pug/_block_for_main_subheader.pug
             a.carousel-control-prev(href="#carouselExampleControls" role="button" data-slide="prev")
-                span.carousel-control-prev-icon.subheader__carousel-control-prev-icon(aria-hidden="true")
+                span.carousel-control-prev-icon.subheader-main__carousel-control-prev-icon(aria-hidden="true")
                 span.sr-only Previous
             a.carousel-control-next(href="#carouselExampleControls" role="button" data-slide="next")
-                span.carousel-control-next-icon.subheader__carousel-control-next-icon(aria-hidden="true")
+                span.carousel-control-next-icon.subheader-main__carousel-control-next-icon(aria-hidden="true")
                 span.sr-only Next
     section.aboutus#about
         .aboutus__card
@@ -170,6 +170,7 @@ append main_content
             +blog__elem-text("#232325", '#454545', "14 Aug 2015 / By Admin", "Donec id lobortis tellus Maecenas.", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed ipsum pulvinar, consequat ipsum non, sodales augue. Donec dapibus ipsum rutrum congue egestas. Curabitur fringilla tortor non aliquam congue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur fringilla tortor non aliquam congue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.")
             +blog__elem-pic('img/main/blog/image4.jpg')
             +blog__elem-text("#555557", '#454545', "14 Aug 2015 / By Admin", "Donec id lobortis tellus Maecenas.", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed ipsum pulvinar, consequat ipsum non, sodales augue. Donec dapibus ipsum rutrum congue egestas. Curabitur fringilla tortor non aliquam congue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur fringilla tortor non aliquam congue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.")
+
     section.clients
         +text("CLIENTS", "img/main/black_line.png", "Nullam lobortis, turpis lobortis placerat vehicula, ipsum lacus bibendum dolor, sit amet pretium odio magna eget risus. Phasellus iaculis ultricies duiNullam lobortis, turpis lobortis placerat vehicula, ipsum lacus bibendum dolor, sit amet pretium odio magna eget risus.")
         .clients__content
