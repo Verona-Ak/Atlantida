@@ -1337,7 +1337,7 @@ h6 {
 }
 
 .wrapper-blog {
-  height: 4151px;
+  height: 4245px;
   background-color: #e3e3e3;
   display: flex;
   justify-content: center;
@@ -1438,4 +1438,64 @@ h6 {
   line-height: 1;
   text-align: center;
   letter-spacing: 1.47px;
+}
+
+.main-blog__line {
+  margin-top: 70px;
+  width: 820px;
+  height: 1px;
+  background-color: #3e3d3d;
+}
+
+.main-blog__switch {
+  margin-top: 76px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+
+.main-blog__page,
+.main-blog__prev,
+.main-blog__next {
+  display: block;
+  width: 38px;
+  height: 38px;
+  border: 1px solid #3e3d3d;
+  color: #3e3d3d;
+  font-family: "Crimson Text", serif;
+  font-size: 14px;
+  font-style: italic;
+  line-height: 1;
+  text-align: center;
+  padding-top: 14px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.main-blog__page_active,
+.main-blog__prev_active,
+.main-blog__next_active {
+  background-color: #3e3d3d;
+  color: #cecece;
+}
+
+.main-blog__next {
+  margin-right: 0;
+  font-weight: bold;
+}
+
+.main-blog__prev {
+  font-weight: bold;
+  display: none;
+}
+
+#one {
+  display: block;
+}
+
+#two,
+#three,
+#four,
+#five {
+  display: none;
 }

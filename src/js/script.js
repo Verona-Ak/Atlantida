@@ -1,4 +1,5 @@
 'use strict';
+// Страница Home
 window.addEventListener('DOMContentLoaded', ()=> {
     $('.carousel').carousel({
         interval: false,
@@ -61,16 +62,113 @@ window.addEventListener('DOMContentLoaded', ()=> {
         });
     });
 
-    // Переход к странице Блок
-    // let titles = document.getElementsByClassName('text__title-words');
-    // console.log(titles);
-    // titles.addEventListener('mouseover', (e)=> {
-       
-        
-    // });
-    // titles.addEventListener('mouseout', (e)=> {
-        
-    // });
+    
     
 
+});
+
+// Страница Blog
+window.addEventListener('DOMContentLoaded', ()=> {
+    // Переключение страниц с блогами на второй странице сайт "Blog with slidebar"
+    let parentForPages = document.querySelector('.main-blog__switch'),
+        pagesAll = document.querySelectorAll('.main-blog__page'),
+        next = document.querySelector('.main-blog__next'),
+        prev = document.querySelector('.main-blog__prev'),
+        wrappers = document.querySelectorAll('.main-blog__wrapper');
+
+    // Создаём переключатели для wrappers-ов и скрываем
+    let quantity_for_addition = wrappers.length - pagesAll.length;
+    for (let i = 0; i < quantity_for_addition; i++) {
+        let page = document.createElement('div');
+        page.classList.add('main-blog__page');
+        page.textContent = pagesAll.length+1;
+        parentForPages.insertBefore(page, next);
+        pagesAll = document.querySelectorAll('.main-blog__page');
+        page.style.display = 'none';
+    }
+
+    function nullation() {
+        // Удаление класса active у всех кнопок-переключателей страниц
+        pagesAll.forEach(function(item) {
+            item.classList.remove('main-blog__page_active');
+        });
+    }
+    function wrapper_toBlock() {
+        // Все wrappers-ы none
+        wrappers.forEach(function(item){
+            item.style.display = 'none';
+        });
+        // Block тот wrappwrs, кот. соответсвует индексу активной кнопки
+        pagesAll.forEach(function(item, i) {
+            if (item.classList.contains('main-blog__page_active')){
+                wrappers[i].style.display = 'block';
+            }
+        });
+    }
+
+    parentForPages.addEventListener('click', (e)=> {
+        if (e.target && e.target.classList.contains('main-blog__page')) {
+            nullation();
+            // Добавление класса active выбранной кнопке
+            e.target.classList.add('main-blog__page_active');
+            wrapper_toBlock();
+        }
+    });
+
+    next.addEventListener('click', ()=> {
+        let index; // индекс активного на данный момент эл-а(кнопки)
+        pagesAll.forEach(function(item, i) {
+            if (item.classList.contains('main-blog__page_active')){
+                item.classList.remove('main-blog__page_active');
+                index = i;
+                return index;
+            }
+        });
+        console.log(index);
+        if(index < 2) {
+            pagesAll[index+1].classList.add('main-blog__page_active');
+            wrapper_toBlock();
+        } else if (index >= 2 && index < pagesAll.length-1) {
+            prev.style.display = 'block';
+            pagesAll[index+1].classList.add('main-blog__page_active');
+            pagesAll.forEach(function(item, i) {
+                if(i <= ((index+1)-3)) {
+                    item.style.display = 'none';
+                } else if (i == (index+1)) {
+                    item.style.display = 'block';
+                }
+            });
+            wrapper_toBlock();
+        } else if (index >= pagesAll.length-1) {
+            pagesAll[index].classList.add('main-blog__page_active');
+        }
+
+    
+    });
+
+    prev.addEventListener('click', ()=> {
+        let index; // индекс активного на данный момент эл-а(кнопки)
+        pagesAll.forEach(function(item, i) {
+            if (item.classList.contains('main-blog__page_active')){
+                item.classList.remove('main-blog__page_active');
+                index = i;
+                return index;
+            }
+        });
+        console.log(index);
+        if (index > (pagesAll.length-1)-3) {
+            pagesAll[index-1].classList.add('main-blog__page_active');
+            wrapper_toBlock();
+        } else if (index <= (pagesAll.length-1)-3) {
+            pagesAll[index-1].classList.add('main-blog__page_active'); 
+            pagesAll.forEach(function(item, i) {
+                if(i <= ((index+1)-3)) {
+                    item.style.display = 'none';
+                } else if (i == (index+1)) {
+                    item.style.display = 'block';
+                }
+            });
+        }
+    });
+    
 });
