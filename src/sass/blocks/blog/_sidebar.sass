@@ -1,3 +1,84 @@
 .sidebar
     width: 301px
     margin-left: 48px
+    &__posts
+        margin-top: 38px
+    &__post
+        margin-top: 38px
+        display: flex
+        img
+            width: 113px
+            height: 109px
+    &__title
+        color: #3e3d3d
+        font-size: 16px
+        font-weight: 700
+        line-height: 18px
+        text-align: left
+        text-transform: uppercase
+        letter-spacing: 1.81px
+    &__content
+        margin-left: 19px
+    &__post-name
+        color: #3e3d3d
+        font-size: 12px
+        font-weight: 400
+        text-align: left
+        text-transform: uppercase
+        letter-spacing: 1.2px
+        line-height: 15px
+        font-weight: 600
+    &__post-text
+        margin-top: 19px
+        color: #3e3d3d
+        font-family: "Crimson Text", serif
+        font-size: 14px
+        font-style: italic
+        text-align: left
+        letter-spacing: 1.4px
+    &__line
+        width: 301px
+        height: 1px
+        background-color: #b7b7b7
+    &__categories
+        margin-top: 67px
+    &__category
+        margin-top: 23px
+        margin-left: 15px
+        color: #3e3d3d
+        font-family: "Crimson Text", serif
+        font-size: 16px
+        font-style: italic
+        line-height: 15px
+        text-align: left
+        position: relative
+        cursor: pointer
+        &_active
+            font-weight: bold
+        &:first-child
+            margin-top: 39px
+        &::before
+            content: url(../../img\blog\category\icons\arrow_small_dark.png)
+            position: absolute
+            top: -4px
+            left: -9px
+            width: 4px
+            height: 7px
+    &__archives
+        margin-top: 62px
+    &__photos
+        margin-top: 61px
+    &__block-with-photos
+        margin-top: 20px
+        display: wrap
+        img
+            width: 90px
+            height: 87px
+            margin-top: 18px
+            margin-right: 14px
+            &:nth-child(3n)
+                margin-right: 0
+.mt-34
+    margin-top: 34px
+.mt-22
+    margin-top: 22px

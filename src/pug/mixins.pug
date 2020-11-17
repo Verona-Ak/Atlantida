@@ -105,3 +105,15 @@ mixin main-blog__content(src, title, date, num, watch, cases, descr)
                 .main-blog__num #{cases}
         .main-blog__descr #{descr}
         button.main-blog__button Read More
+
+mixin sidebar__post(src, title, text)
+    .sidebar__post
+        img(src=src, alt='pic')
+        .sidebar__content
+            .sidebar__post-name #{title}
+            .sidebar__post-text #{text}
+
+mixin sidebar__line(classMt)
+    .sidebar__line(class=classMt)
+mixin sidebar__category(name)
+    .sidebar__category #{name}
