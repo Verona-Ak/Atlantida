@@ -1499,3 +1499,44 @@ h6 {
 #five {
   display: none;
 }
+
+.sidebar {
+  width: 301px;
+  margin-left: 48px;
+}
+
+.form-for-search {
+  position: relative;
+}
+
+.form-for-search__search {
+  width: 301px;
+  height: 39px;
+  border: 2px solid #a8a8a8;
+  background-color: transparent;
+  color: #3e3d3d;
+  font-family: "Crimson Text", serif;
+  font-size: 14px;
+  font-style: italic;
+  text-align: left;
+  padding: 13px 16px;
+}
+
+.form-for-search__cansel {
+  font-size: 14px;
+  border: none;
+  color: #3e3d3d;
+  background-color: transparent;
+  position: absolute;
+  top: 8px;
+  right: 34px;
+  display: none;
+}
+
+.form-for-search__button {
+  position: absolute;
+  top: 6px;
+  right: 16px;
+  border: none;
+  background-color: transparent;
+}
