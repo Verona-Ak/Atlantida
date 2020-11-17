@@ -1336,7 +1336,7 @@ h6 {
   letter-spacing: 1.4px;
 }
 
-.wrapper-blog {
+.wrapper {
   height: 4245px;
   background-color: #e3e3e3;
   display: flex;
@@ -1660,4 +1660,38 @@ h6 {
   right: 16px;
   border: none;
   background-color: transparent;
+}
+
+.subheader-post {
+  height: 396px;
+  background: url("/img/post-one/bg_post.jpg") center center/cover no-repeat;
+}
+
+.subheader-post__title {
+  margin-top: 109px;
+  color: #ffffff;
+  font-family: Stylish, sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 0.89px;
+}
+
+.subheader-post__line {
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.subheader-post__paragraph {
+  margin-top: 28px;
+  color: #ffffff;
+  font-family: "Crimson Text", serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  text-align: center;
+  letter-spacing: 1.4px;
 }

@@ -1,0 +1,13 @@
+extends pug/template.pug
+include pug/mixins.pug
+append title
+    |  Post
+append main_content
+    section.subheader-post
+        .subheader__nav
+        h1.subheader-post__title POST WITH SIDEBAR
+        img.subheader-post__line(src="img/post-one/line_white.png" alt='line')
+        p.subheader-post__paragraph Home > Blog
+    .wrapper
+        main.main-post(role='main')
+        include pug/_sidebar.pug

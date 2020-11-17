@@ -1,0 +1,51 @@
+aside.sidebar
+    form.form-for-search
+        input.form-for-search__search(type="text" placeholder="Search" aria-label="Search") 
+        button.form-for-search__cansel &#10006;
+        button.form-for-search__button(type="submit")
+            img(src="img/blog/posts/icons/search.png", alt="search")
+    .sidebar__posts
+        .sidebar__title Latest POSTS
+        +sidebar__post("../img/blog/posts/post_1.jpg", "sit amet pretium odio magna ege", "Nullam lobortis, turpis lobortis placerat vehicula, ipsum")
+        +sidebar__line('mt-34')
+        +sidebar__post("../img/blog/posts/post_2.jpg", "sit amet pretium odio magna ege", "Nullam lobortis, turpis lobortis placerat vehicula, ipsum")
+        +sidebar__line('mt-34')
+        +sidebar__post("../img/blog/posts/post_3.jpg", "sit amet pretium odio magna ege", "Nullam lobortis, turpis lobortis placerat vehicula, ipsum")
+        +sidebar__line('mt-34')              
+        +sidebar__post("../img/blog/posts/post_4.jpg", "sit amet pretium odio magna ege", "Nullam lobortis, turpis lobortis placerat vehicula, ipsum")
+    .sidebar__categories
+        .sidebar__title categories
+        +sidebar__category("Photography")
+        +sidebar__line('mt-22')
+        +sidebar__category("Website Design")
+        +sidebar__line('mt-22')
+        +sidebar__category("Branding")
+        +sidebar__line('mt-22')
+        +sidebar__category("Flyers")
+        +sidebar__line('mt-22')
+        +sidebar__category("Uncategories")
+        +sidebar__line('mt-22')
+        +sidebar__category("Category 22")
+        +sidebar__line('mt-22')
+    .sidebar__archives
+        .sidebar__title ARCHIVES
+        +sidebar__category("January 2015")
+        +sidebar__line('mt-22')
+        +sidebar__category("December 2015")
+        +sidebar__line('mt-22')
+        +sidebar__category("November 2015")
+        +sidebar__line('mt-22')
+        +sidebar__category("October 2015")
+        +sidebar__line('mt-22')
+        +sidebar__category("September 2015")
+        +sidebar__line('mt-22')
+    .sidebar__photos
+        .sidebar__title FLICKR PHOTOS
+        .sidebar__block-with-photos
+            img(src="img/blog/photos/photo_1.jpg", alt="pic")
+            img(src="img/blog/photos/photo_2.jpg", alt="pic")
+            img(src="img/blog/photos/photo_3.jpg", alt="pic")
+            img(src="img/blog/photos/photo_4.jpg", alt="pic")
+            img(src="img/blog/photos/photo_5.jpg", alt="pic")
+            img(src="img/blog/photos/photo_6.jpg", alt="pic")
+
