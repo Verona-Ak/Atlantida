@@ -1695,3 +1695,104 @@ h6 {
   text-align: center;
   letter-spacing: 1.4px;
 }
+
+.main-post {
+  width: 821px;
+}
+
+.main-post__content {
+  width: 821px;
+  margin-top: 53px;
+}
+
+.main-post__content:first-child {
+  margin-top: 0;
+}
+
+.main-post__img {
+  display: block;
+}
+
+.main-post__title {
+  margin-top: 40px;
+  color: #3e3d3d;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 1.81px;
+}
+
+.main-post__date {
+  margin-top: 12px;
+  color: #3e3d3d;
+  font-family: "Crimson Text", serif;
+  font-size: 14px;
+  font-style: italic;
+  line-height: 18px;
+  text-align: left;
+}
+
+.main-post__statistics {
+  height: 37px;
+  margin-top: 19px;
+  padding-left: 6px;
+  border-top: 1px solid #b7b7b7;
+  border-bottom: 1px solid #b7b7b7;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.main-post__statistic {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-right: 15px;
+}
+
+.main-post__statistic:last-child {
+  margin-right: 0;
+}
+
+.main-post__img {
+  display: block;
+  margin-right: 10px;
+}
+
+.main-post__num {
+  color: #818181;
+  font-family: "Crimson Text", serif;
+  font-size: 14px;
+  font-style: italic;
+  line-height: 18px;
+  text-align: left;
+}
+
+.main-post__descr {
+  margin-top: 29px;
+  color: #3e3d3d;
+  font-family: "Crimson Text", serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 25px;
+  text-align: left;
+  letter-spacing: 1.4px;
+}
+
+.main-post__framed-text {
+  width: 100%;
+  height: 193px;
+  border: 2px solid #a8a8a8;
+  margin-top: 40px;
+  padding: 68px 45px 0 45px;
+  color: #3e3d3d;
+  font-family: "Crimson Text", serif;
+  font-size: 16px;
+  font-weight: 700;
+  font-style: italic;
+  line-height: 25px;
+  text-align: left;
+  letter-spacing: 1.6px;
+}

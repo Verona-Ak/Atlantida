@@ -118,3 +118,18 @@ mixin sidebar__line(classMt)
     .sidebar__line(class=classMt)
 mixin sidebar__category(name)
     .sidebar__category #{name}
+
+mixin main-post__content(src, title, date, num, watch, cases)
+    img.main-post__img(src=src, alt='pic')
+    h2.main-post__title #{title}
+    .main-post__date #{date}
+    .main-post__statistics
+        .main-post__statistic
+            img.main-post__img(src='../img/blog/blog/icons/comments.svg')
+            .main-post__num #{num}
+        .main-post__statistic
+            img.main-post__img(src='../img/blog/blog/icons/watch.svg')
+            .main-post__num #{watch}
+        .main-post__statistic
+            img.main-post__img(src='../img/blog/blog/icons/case.svg')
+            .main-post__num #{cases}
