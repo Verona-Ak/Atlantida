@@ -1664,7 +1664,7 @@ h6 {
 
 .subheader-post {
   height: 396px;
-  background: url("/img/post-one/bg_post.jpg") center center/cover no-repeat;
+  background: url("/img/posts/bg_post.jpg") center center/cover no-repeat;
 }
 
 .subheader-post__title {
