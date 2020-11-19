@@ -11,4 +11,19 @@ append main_content
     .wrapper
         main.main-post(role='main')
             block post_content
+            .main-post__social
+                a(href="#")
+                    img(src="img/posts/icons/facebook.png", alt="pic")
+                a(href="#")
+                    img(src="img/posts/icons/twiter.png", alt="pic")
+                a(href="#")
+                    img(src="img/posts/icons/google.png", alt="pic")
+                a(href="#")
+                    img(src="img/posts/icons/behance.png", alt="pic")
+                a(href="#")
+                    img(src="img/posts/icons/youtube.png", alt="pic")
+            .main-post__comments
+                h2.main-post__title.mt-66 
+                    block comments
+                        | COMMENTS
         include ./_sidebar.pug

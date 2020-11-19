@@ -1796,3 +1796,32 @@ h6 {
   text-align: left;
   letter-spacing: 1.6px;
 }
+
+.main-post__social {
+  margin-top: 42px;
+  height: 69px;
+  border-top: 1px solid #b7b7b7;
+  border-bottom: 1px solid #b7b7b7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-post__social a {
+  display: block;
+  margin-right: 5px;
+}
+
+.main-post__social a:last-child {
+  margin-right: 0;
+}
+
+.main-post__social a img {
+  display: block;
+  width: 31px;
+  height: 31px;
+}
+
+.mt-66 {
+  margin-top: 66px;
+}
