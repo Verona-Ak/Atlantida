@@ -62,8 +62,13 @@ window.addEventListener('DOMContentLoaded', ()=> {
         });
     });
 
-    
-    
+    function increase_padding_wrapper(){
+        if(currentURL=='post-one.html' || currentURL=='post-two.html' || currentURL=='post-three.html' || currentURL=='post-four.html' || currentURL=='post-five.html') {
+            let wrapper = document.querySelector('.wrapper');
+            wrapper.style.paddingBottom = '151px';
+        }
+    }
+    increase_padding_wrapper();
 
 });
 

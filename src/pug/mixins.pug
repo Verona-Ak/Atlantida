@@ -133,3 +133,23 @@ mixin main-post__content(src, title, date, num, watch, cases)
         .main-post__statistic
             img.main-post__img(src='../img/blog/blog/icons/case.svg')
             .main-post__num #{cases}
+
+mixin main-post__comment(src, name, date, comment)
+    .main-post__comments-wrapper
+        img.main-post__user-photo(src=src, alt='photo')
+        .main-post__comment
+            .main-post__user-name #{name}
+            .main-post__comm-date #{date}
+            .main-post__user-comment #{comment}
+            .main-post__reply Reply
+    .main-post__line
+
+mixin main-post__reply-comment(src, name, date, comment)
+    .main-post__comments-wrapper.reply-wrapper
+        img.main-post__user-photo(src=src, alt='photo')
+        .main-post__comment.reply-comment
+            .main-post__user-name #{name}
+            .main-post__comm-date #{date}
+            .main-post__user-comment #{comment}
+            .main-post__reply Reply
+    .main-post__line

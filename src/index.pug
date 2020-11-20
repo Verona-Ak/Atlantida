@@ -3,6 +3,8 @@ include pug/mixins.pug
 append title
     |  Home
 append main_content
+    append variables
+        - currentURL = 'index.html';
     section.subheader-main#home
         .subheader__nav
         div#carouselExampleControls.carousel.slide(data-ride="carousel")

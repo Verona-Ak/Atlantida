@@ -1,6 +1,8 @@
 extends pug/posts.pug
 include pug/mixins.pug
 append post_content
+    append variables
+        - currentURL = 'post-five.html';
     .main-post__content
         +main-post__content("img/blog/blog/fiveblog.jpg", "Donec id lobortis tellus. Maecenas vel dignissim", "By Admin / 07 October 2015", '95', "567", "Branding")
     .main-post__descr
@@ -9,5 +11,8 @@ append post_content
         | Nullam lobortis, turpis lobortis placerat vehicula, ipsum lacus bibendum dolor, sit amet pretium odio magna eget risus. Phasellus iaculis ultricies duiNullam lobortis, turpis lobortis placerat vehicula.
     .main-post__descr
         | <br>Nullam lobortis, turpis lobortis placerat vehicula, ipsum lacus bibendum dolor, sit amet pretium odio magna eget risus. Phasellus iaculis ultricies duiNullam lobortis, turpis lobortis placerat vehicula, ipsum lacus bibendum dolor, sit amet pretium odio magna eget risus.Nullam lobortis, turpis lobortis placerat vehicula, ipsum lacus bibendum dolor, sit amet pretium odio magna eget risus. Phasellus iaculis ultricies duiNullam lobortis, turpis lobortis placerat vehicula, ipsum lacus bibendum dolor, sit amet pretium odio magna eget risus.<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac consequat erat. Maecenas dignissim, justo sit amet consequat sagittis, libero ipsum elementum nisi, at efficitur tellus ante a nisl. Pellentesque eu imperdiet lacus, quis gravida libero. Vivamus ac est mauris. Sed orci velit, iaculis quis elementum sit amet, lacinia vitae purus. Nam magna nulla, ultrices nec faucibus in, venenatis imperdiet nisi. Aliquam interdum lectus tempus nunc luctus condimentum a vel magna.<br><br>Aliquam nibh diam, elementum in lorem eu, dictum pretium leo. Nullam condimentum ante at sapien consectetur fringilla. Fusce ut ultricies tortor, eu sagittis elit. Pellentesque pretium, arcu ut consectetur posuere, nulla purus porttitor eros, vel eleifend mi ligula vel ligula. Aenean eget malesuada erat, ut ultricies orci. Sed sed tortor ut lorem semper feugiat vel vel magna. Aliquam fermentum, nunc nec cursus lobortis, odio odio elementum augue, eget rhoncus magna elit ut lorem. Quisque ac quam non purus venenatis lacinia. Donec sit amet posuere ante, pulvinar interdum nibh.
-append comments 
-    |  (5)
+append commentsTitle 
+    |  (8)
+append comments
+    +main-post__comment("img/posts/user_photo.png", "BRIAN SMITH", "02 Nivenber 2015 at 11:00 pm", "Nullam lobortis, turpis lobortis placerat vehicula, ipsum lacus bibendum dolor, sit amet pretium odio magna eget risus. Phasellus iaculis ultricies duiNullam lobortis, turpis lobortis placerat vehicula, ipsum lacus bibendum dolor, sit amet pretium odio magna eget risus.")
+    +main-post__reply-comment("img/posts/user_photo(2).png", "ANGELA ROBERTS", "03 Nivenber 2015 at 08:00 pm", "Nullam lobortis, turpis lobortis placerat vehicula, ipsum lacus bibendum dolor, sit amet pretium odio magna eget risus. Phasellus iaculis ultricies duiNullam lobortis, turpis lobortis placerat vehicula, ipsum lacus bibendum dolor, sit amet pretium odio magna eget risus.")

@@ -24,6 +24,18 @@ append main_content
                     img(src="img/posts/icons/youtube.png", alt="pic")
             .main-post__comments
                 h2.main-post__title.mt-66 
-                    block comments
+                    block commentsTitle
                         | COMMENTS
-        include ./_sidebar.pug
+                block comments
+            .main-post__form
+                h2.main-post__title.mt-91 LEAVE A COMMENT
+                form.comments-form.mt-46#comments-form(action="#" novalidate)
+                    .comments-form__inputs-row
+                        input(name="name" required placeholder="Name*" type="text")
+                        input(name="email" required placeholder="E-mail*" type="email")
+                    .comments-form__inputs-row
+                        input(name="subject" required placeholder="Subject")
+                        input(name="email" required placeholder="Website" type="text")
+                    textarea(name="message" placeholder="Message")
+                    button Submit
+        include ./_sidebar.pug 
