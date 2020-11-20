@@ -2,9 +2,9 @@ extends pug/template.pug
 include pug/mixins.pug
 append title
     |  Blog
+append variables
+    - currentURL = 'blog.html'
 append main_content
-    append variables
-        - currentURL = 'blog.html';
     section.subheader-blog
         .subheader__nav
         h1.subheader-blog__title BLOG WITH SIDEBAR

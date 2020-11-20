@@ -1,8 +1,8 @@
 extends pug/posts.pug
 include pug/mixins.pug
+append variables
+    - currentURL = 'post-two.html'
 append post_content
-    append variables
-        - currentURL = 'post-two.html';
     .main-post__content
         +main-post__content("img/blog/blog/twoblog.jpg", "Donec id lobortis tellus. Maecenas vel dignissim", "By Admin / 07 October 2015", '95', "567", "Branding")
     .main-post__descr

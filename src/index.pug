@@ -2,9 +2,9 @@ extends pug/template.pug
 include pug/mixins.pug
 append title
     |  Home
+append variables
+    - currentURL = 'index.html'
 append main_content
-    append variables
-        - currentURL = 'index.html';
     section.subheader-main#home
         .subheader__nav
         div#carouselExampleControls.carousel.slide(data-ride="carousel")
@@ -34,8 +34,10 @@ append main_content
                     'Donec aliquet, ipsum ut lobortis facilisis, nisi ligula aliquam odio, ut vehicula odio lorem in erat. Quisque quam ipsum, commodo non condimentum a, fermentum id sapien. Pellentesque sit amet sem neque. Maecenas est enim, sollicitudin sit amet nisi vel, mattis efficitur sapien. Nulla lobortis dui in aliquam placerat. Maecenas commodo odio nec neque imperdiet sagittis. Fusce mauris tellus, vulputate id finibus a, rutrum et justo. Vivamus at eros sed justo laoreet mattis vulputate vel magna. Sed quis pulvinar quam, et tempus purus. Fusce et nisi eget dui hendrerit iaculis. Cras volutpat augue tempor viverra tincidunt. Maecenas interdum scelerisque enim. Aenean interdum leo ac lectus gravida, id tincidunt sem finibus. Curabitur ac arcu blandit, tempus leo id, ultrices ante.'
                 )  
                 .aboutus__buttons
-                    button.aboutus__button.aboutus__button_black Contact Us
-                    button.aboutus__button.aboutus__button_white Portfolio
+                    a(href='index.html#map') 
+                        button.aboutus__button.aboutus__button_black Contact Us
+                    a(href='index.html#portfolio')
+                        button.aboutus__button.aboutus__button_white Portfolio
             .aboutus__results
                 +rezult("img/main/about_us/about/awards.png", 'AWARDS', 'WINNER', 54)
                 +rezult("img/main/about_us/about/done.png", 'JOBS', 'DONE', 1054)
@@ -184,6 +186,17 @@ append main_content
     .reviews
         include pug/_reviews.pug
     .map#map 
+    .overlay
+        .modal-start
+            .modal-start__close &times;
+            .modal-start__subtitle Fill the form
+            .modal-start__descr and we will contact you
+            form.modal-start__form(action="#" novalidate)
+                input(name="name" required placeholder="Name*" type="text")
+                input(name="phone" required placeholder="Telephone*")
+                input(name="email" required placeholder="E-mail*" type="email")
+                button Submit
+
 
     script.
         function initMap(){
@@ -207,6 +220,7 @@ append main_content
             
         }       
     
-    
+prepend scripts
+    script(async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCCHwQFGADSxSGOSM1Awj_KIxryHqB6ldA&callback=initMap")    
 
                 

@@ -4,6 +4,7 @@
   font-family: Montserrat, sans-serif;
   margin: 0;
   padding: 0;
+  outline: none;
 }
 
 a {
@@ -216,6 +217,7 @@ h6 {
   font-size: 15px;
   font-weight: 400;
   letter-spacing: 1.5px;
+  transition: .3s all;
 }
 
 .subheader-main__arrow-key {
@@ -261,6 +263,15 @@ h6 {
   justify-content: center;
 }
 
+.aboutus__buttons a {
+  display: block;
+  margin-left: 3px;
+}
+
+.aboutus__buttons a:nth-child(1) {
+  margin-left: 0;
+}
+
 .aboutus__button {
   width: 135px;
   height: 39px;
@@ -268,11 +279,6 @@ h6 {
   font-size: 13px;
   font-weight: 400;
   letter-spacing: 1.47px;
-  margin-left: 2px;
-}
-
-.aboutus__button:nth-child(1) {
-  margin-left: 0;
 }
 
 .aboutus__button_black {
@@ -1302,6 +1308,98 @@ h6 {
   border: none;
 }
 
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 21;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+}
+
+.modal-start {
+  background-color: #e3e3e3;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 380px;
+  height: 400px;
+  padding: 20px 40px 20px 40px;
+}
+
+.modal-start__close {
+  position: absolute;
+  top: 0;
+  right: -40px;
+  color: #14af81;
+  font-size: 50px;
+  line-height: 21px;
+  cursor: pointer;
+}
+
+.modal-start__subtitle {
+  font-family: 'Crimson Text', serif;
+  color: #3e3d3d;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: .44px;
+}
+
+.modal-start__descr {
+  margin-top: 5px;
+  font-family: 'Stylish', sans-serif;
+  color: #3e3d3d;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 1;
+  letter-spacing: 1.4px;
+}
+
+.modal-start__form {
+  margin: 0 auto;
+  width: 280px;
+  margin-top: 36px;
+}
+
+.modal-start__form input {
+  width: 100%;
+  height: 56px;
+  padding: 22px 24px 23px 24px;
+  background-color: transparent;
+  border: 2px solid #464646;
+  color: #949494;
+  font-family: "Crimson Text", serif;
+  font-size: 14px;
+  font-style: italic;
+  line-height: 20.31px;
+  text-align: left;
+  letter-spacing: 1.4px;
+  margin-top: 7px;
+}
+
+.modal-start__form input:nth-child(1) {
+  margin-top: 0;
+}
+
+.modal-start button {
+  margin-top: 7px;
+  width: 100%;
+  height: 56px;
+  background-color: #464646;
+  text-align: center;
+  color: #e3e3e3;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 1.47px;
+  border: none;
+}
+
 .subheader-blog {
   height: 396px;
   background: url("/img/blog/header/bg_header.jpg") center center/cover no-repeat;
@@ -1342,6 +1440,10 @@ h6 {
   justify-content: center;
   align-items: start;
   padding: 86px 0 83px 0;
+}
+
+.wrapper-max {
+  padding: 86px 0 151px 0;
 }
 
 .main-blog__content {

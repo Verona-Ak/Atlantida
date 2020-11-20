@@ -73,10 +73,9 @@
             <h2 class="text__title"> ABOUT US</h2><img class="text__line" src="img/main/black_line.png" alt="line"/>
             <div class="text__paragraph">Donec aliquet, ipsum ut lobortis facilisis, nisi ligula aliquam odio, ut vehicula odio lorem in erat. Quisque quam ipsum, commodo non condimentum a, fermentum id sapien. Pellentesque sit amet sem neque. Maecenas est enim, sollicitudin sit amet nisi vel, mattis efficitur sapien. Nulla lobortis dui in aliquam placerat. Maecenas commodo odio nec neque imperdiet sagittis. Fusce mauris tellus, vulputate id finibus a, rutrum et justo. Vivamus at eros sed justo laoreet mattis vulputate vel magna. Sed quis pulvinar quam, et tempus purus. Fusce et nisi eget dui hendrerit iaculis. Cras volutpat augue tempor viverra tincidunt. Maecenas interdum scelerisque enim. Aenean interdum leo ac lectus gravida, id tincidunt sem finibus. Curabitur ac arcu blandit, tempus leo id, ultrices ante.</div>
           </div>
-          <div class="aboutus__buttons">
-            <button class="aboutus__button aboutus__button_black">Contact Us</button>
-            <button class="aboutus__button aboutus__button_white">Portfolio</button>
-          </div>
+          <div class="aboutus__buttons"><a href="index.html#map"> 
+              <button class="aboutus__button aboutus__button_black">Contact Us</button></a><a href="index.html#portfolio">
+              <button class="aboutus__button aboutus__button_white">Portfolio</button></a></div>
         </div>
         <div class="aboutus__results">
           <div class="aboutus__item"><img class="aboutus__icon" src="img/main/about_us/about/awards.png" alt="pic"/>
@@ -450,6 +449,19 @@ PROGRAMING
       </div>
     </div>
     <div class="map" id="map"> </div>
+    <div class="overlay">
+      <div class="modal-start">
+        <div class="modal-start__close">&times;</div>
+        <div class="modal-start__subtitle">Fill the form</div>
+        <div class="modal-start__descr">and we will contact you</div>
+        <form class="modal-start__form" action="#" novalidate="novalidate">
+          <input name="name" required="required" placeholder="Name*" type="text"/>
+          <input name="phone" required="required" placeholder="Telephone*"/>
+          <input name="email" required="required" placeholder="E-mail*" type="email"/>
+          <button>Submit</button>
+        </form>
+      </div>
+    </div>
     <script>
       function initMap(){
           var element = document.getElementById('map');
@@ -472,9 +484,6 @@ PROGRAMING
           
       }       
       
-      
-      
-              
     </script>
     <footer class="footer">
       <div class="footer__top-block">
@@ -512,9 +521,9 @@ PROGRAMING
         </div>
       </div>
       <div class="footer__line"></div>
-      <div class="footer__bottom-block">Copyright © 2015 Atlantida Theme</div>
+      <div class="footer__bottom-block">Copyright © 2015 Atlantida Theme  </div>
     </footer>
-    <script async="async" defer="defer" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCCHwQFGADSxSGOSM1Awj_KIxryHqB6ldA&amp;callback=initMap"></script>
+    <script async="async" defer="defer" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCCHwQFGADSxSGOSM1Awj_KIxryHqB6ldA&amp;callback=initMap">   </script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     <script src="js/script.min.js"></script>
