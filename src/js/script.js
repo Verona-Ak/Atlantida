@@ -63,14 +63,16 @@ window.addEventListener('DOMContentLoaded', ()=> {
     });
 
     // Modal
-    let getStartedBtn = document.querySelector('.subheader-main__button'),
+    let getStartedBtns = document.querySelectorAll('.subheader-main__button'),
         overlay = document.querySelector('.overlay'),
         close = document.querySelector('.modal-start__close'),
         form = document.querySelector('.modal-start__form');
-
-    getStartedBtn.addEventListener('click', ()=> {
-        overlay.style.display = 'block';
-    });
+    for (let item of getStartedBtns) {
+        item.addEventListener('click', function() {
+            overlay.style.display = 'block';
+        });
+    }
+    
     close.addEventListener('click', ()=> {
         overlay.style.display = '';
         form.reset();
